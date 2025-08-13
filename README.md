@@ -11,7 +11,6 @@
 
 **🚀 Your ultimate destination for premium design resources, tools, and inspiration**
 
-[🌟 Live Demo](#) • [📖 Documentation](#features) • [🐛 Report Bug](#) • [💡 Request Feature](#)
 
 </div>
 
