@@ -857,46 +857,46 @@ export const resources = [
   },
 
   // Stock Videos
-  {
-    id: '84',
-    name: 'Pexels Videos',
-    description: 'Largest library of free to use videos, donated by the community.',
-    url: 'https://www.pexels.com/videos',
-    category: 'stock-videos',
-    tags: ['Largest Library', 'Community', 'Free'],
-    featured: true,
-    free: true
-  },
-  {
-    id: '85',
-    name: 'Coverr.co',
-    description: 'Beautiful free stock video footage.',
-    url: 'https://coverr.co/',
-    category: 'stock-videos',
-    tags: ['Beautiful', 'Stock Video', 'Footage'],
-    featured: false,
-    free: true
-  },
-  {
-    id: '86',
-    name: 'Videezy',
-    description: 'Free HD stock footage & 4K videos.',
-    url: 'https://www.videezy.com/',
-    category: 'stock-videos',
-    tags: ['HD', '4K Videos', 'Stock Footage'],
-    featured: false,
-    free: true
-  },
-  {
-    id: '87',
-    name: 'Mix Kit',
-    description: 'Stock video clips & music.',
-    url: 'https://mixkit.co/',
-    category: 'stock-videos',
-    tags: ['Video Clips', 'Music', 'Stock'],
-    featured: false,
-    free: true
-  },
+  // {
+  //   id: '84',
+  //   name: 'Pexels Videos',
+  //   description: 'Largest library of free to use videos, donated by the community.',
+  //   url: 'https://www.pexels.com/videos',
+  //   category: 'stock-videos',
+  //   tags: ['Largest Library', 'Community', 'Free'],
+  //   featured: true,
+  //   free: true
+  // },
+  // {
+  //   id: '85',
+  //   name: 'Coverr.co',
+  //   description: 'Beautiful free stock video footage.',
+  //   url: 'https://coverr.co/',
+  //   category: 'stock-videos',
+  //   tags: ['Beautiful', 'Stock Video', 'Footage'],
+  //   featured: false,
+  //   free: true
+  // },
+  // {
+  //   id: '86',
+  //   name: 'Videezy',
+  //   description: 'Free HD stock footage & 4K videos.',
+  //   url: 'https://www.videezy.com/',
+  //   category: 'stock-videos',
+  //   tags: ['HD', '4K Videos', 'Stock Footage'],
+  //   featured: false,
+  //   free: true
+  // },
+  // {
+  //   id: '87',
+  //   name: 'Mix Kit',
+  //   description: 'Stock video clips & music.',
+  //   url: 'https://mixkit.co/',
+  //   category: 'stock-videos',
+  //   tags: ['Video Clips', 'Music', 'Stock'],
+  //   featured: false,
+  //   free: true
+  // },
 
   // CSS Frameworks
   {
@@ -1015,26 +1015,26 @@ export const resources = [
   },
 
   // Angular UI Libraries
-  {
-    id: '99',
-    name: 'Material Angular',
-    description: 'UI library for Angular based on Material design.',
-    url: 'https://material.angular.io/',
-    category: 'angular-ui',
-    tags: ['Material Design', 'Angular', 'UI Library'],
-    featured: true,
-    free: true
-  },
-  {
-    id: '100',
-    name: 'PrimeNG',
-    description: 'Powerful UI component library for Angular.',
-    url: 'https://www.primefaces.org/primeng/#/',
-    category: 'angular-ui',
-    tags: ['Powerful', 'UI Components', 'Angular'],
-    featured: true,
-    free: true
-  },
+  // {
+  //   id: '99',
+  //   name: 'Material Angular',
+  //   description: 'UI library for Angular based on Material design.',
+  //   url: 'https://material.angular.io/',
+  //   category: 'angular-ui',
+  //   tags: ['Material Design', 'Angular', 'UI Library'],
+  //   featured: true,
+  //   free: true
+  // },
+  // {
+  //   id: '100',
+  //   name: 'PrimeNG',
+  //   description: 'Powerful UI component library for Angular.',
+  //   url: 'https://www.primefaces.org/primeng/#/',
+  //   category: 'angular-ui',
+  //   tags: ['Powerful', 'UI Components', 'Angular'],
+  //   featured: true,
+  //   free: true
+  // },
 
   // Icon Fonts
   {
@@ -5819,5 +5819,2909 @@ export const resources = [
     tags: ['Calculate', 'Visualize', 'Modular Scales'],
     featured: false,
     free: true
-  }
+  },
+  {
+      "id": "571",
+      "name": "WhatFont",
+      "description": "The easiest way to identify fonts on web pages.",
+      "url": "https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm",
+      "category": "chrome-extensions",
+      "tags": ["Fonts", "Identify Fonts", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "572",
+      "name": "WhatRuns",
+      "description": "Discover what runs a website. Frameworks, Analytics Tools, Wordpress Plugins, Fonts - you name it.",
+      "url": "https://chrome.google.com/webstore/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Tech Stack", "Frameworks", "Analytics", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "573",
+      "name": "Web Developer",
+      "description": "Adds a toolbar button with various web developer tools.",
+      "url": "https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm",
+      "category": "chrome-extensions",
+      "tags": ["Developer Tools", "Toolbar", "Debugging", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "574",
+      "name": "Awesome Screenshot & Screen Recorder",
+      "description": "Full page screen capture and screen recorder - 2 in 1. Share screencast video instantly.",
+      "url": "https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Screenshot", "Screen Recorder", "Capture", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "575",
+      "name": "daily.dev - News for Busy Developers",
+      "description": "Get programming news with zero effort. Simply open a new tab, and you’re all set.",
+      "url": "https://chrome.google.com/webstore/detail/dailydev-news-for-busy-de/jlmpjdjjbgclbocgajdjefcidcncaied",
+      "category": "chrome-extensions",
+      "tags": ["News", "Developer", "Productivity", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "576",
+      "name": "JSONView",
+      "description": "Validate and view JSON documents.",
+      "url": "https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["JSON", "Viewer", "Formatter", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "577",
+      "name": "JSON Lite",
+      "description": "Browser extension for viewing JSON files.",
+      "url": "https://github.com/lauriro/json-lite",
+      "category": "chrome-extensions",
+      "tags": ["JSON", "Viewer", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "578",
+      "name": "Window Resizer",
+      "description": "Resize the browser window to emulate various screen resolutions.",
+      "url": "https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Responsive", "Testing", "Resizer", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "579",
+      "name": "Responsive Viewer",
+      "description": "Show multiple screens once, Responsive design tester.",
+      "url": "https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Responsive", "Testing", "Viewer", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "580",
+      "name": "BrowserStack",
+      "description": "Instantly test your webpage on any desktop or mobile browser.",
+      "url": "https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Testing", "Cross-Browser", "BrowserStack", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "581",
+      "name": "VisBug",
+      "description": "Open source web design debug tool built with JavaScript.",
+      "url": "https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Design", "Debug", "CSS", "JavaScript", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "582",
+      "name": "Kontrast - WCAG Contrast Checker",
+      "description": "Quickly check and adjust contrast in real-time in your browser to meet WCAG 2.1 requirements.",
+      "url": "https://chrome.google.com/webstore/detail/kontrast-wcag-contrast-ch/haphaaenepedkjngghandlmhfillnhjk?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Accessibility", "Contrast", "WCAG", "Checker", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "583",
+      "name": "PerfectPixel",
+      "description": "Adds a semi-transparent image overlay over the top of the developed HTML to easily perform pixel perfect comparison.",
+      "url": "https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi",
+      "category": "chrome-extensions",
+      "tags": ["Pixel Perfect", "Design", "Comparison", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "584",
+      "name": "Pesticide",
+      "description": "Inserts the Pesticide CSS into the current page, outlining each HTML element to better see placement on the page.",
+      "url": "https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi",
+      "category": "chrome-extensions",
+      "tags": ["CSS", "Layout", "Debug", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "585",
+      "name": "Site Palette",
+      "description": "A must-have tool for designers and frontend developers to grab colors for any website.",
+      "url": "https://chrome.google.com/webstore/detail/site-palette/pekhihjiehdafocefoimckjpbkegknoh",
+      "category": "chrome-extensions",
+      "tags": ["Color", "Palette", "Design", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "586",
+      "name": "ColorZilla",
+      "description": "Advanced Eyedropper, Color Picker, Gradient Generator and other colorful goodies.",
+      "url": "https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp",
+      "category": "chrome-extensions",
+      "tags": ["Color", "Eyedropper", "Picker", "Generator", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "587",
+      "name": "JavaScript and CSS Code Beautifier",
+      "description": "Beautify CSS, JavaScript and JSON code when you open a .css/.js/.json file.",
+      "url": "https://chrome.google.com/webstore/detail/javascript-and-css-code-b/iiglodndmmefofehaibmaignglbpdald?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Beautifier", "Formatter", "CSS", "JavaScript", "JSON", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "588",
+      "name": "Imageye - Image downloader",
+      "description": "Find and download all images on a web page.",
+      "url": "https://chrome.google.com/webstore/detail/imageye-image-downloader/agionbommeaifngbhincahgmoflcikhm",
+      "category": "chrome-extensions",
+      "tags": ["Image", "Downloader", "Extractor", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "589",
+      "name": "GoFullPage - Full Page Screen Capture",
+      "description": "Capture a screenshot of your current page in entirety and reliably.",
+      "url": "https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl",
+      "category": "chrome-extensions",
+      "tags": ["Screenshot", "Capture", "Full Page", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "590",
+      "name": "Stylebot",
+      "description": "Change the appearance of the web instantly.",
+      "url": "https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha",
+      "category": "chrome-extensions",
+      "tags": ["CSS", "Styler", "Customization", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "591",
+      "name": "ColorPick Eyedropper",
+      "description": "A zoomed eyedropper & color chooser tool that allows you to select color values from webpages.",
+      "url": "https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg",
+      "category": "chrome-extensions",
+      "tags": ["Color", "Eyedropper", "Picker", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "592",
+      "name": "React Developer Tool",
+      "description": "React debugging tools to the Chrome Developer Tools. It allows you to inspect the React component hierarchies.",
+      "url": "https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi",
+      "category": "chrome-extensions",
+      "tags": ["React", "Developer Tools", "Debug", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "593",
+      "name": "Wappalyzer",
+      "description": "Wappalyzer is a technology profiler that shows you what websites are built with.",
+      "url": "https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg",
+      "category": "chrome-extensions",
+      "tags": ["Tech Stack", "Profiler", "Wappalyzer", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "594",
+      "name": "Fake Filler",
+      "description": "Fake Filler a form filler that fills all inputs on a page with fake/dummy data.",
+      "url": "https://chrome.google.com/webstore/detail/fake-filler/bnjjngeaknajbdcgpfkgnonkmififhfo",
+      "category": "chrome-extensions",
+      "tags": ["Form Filler", "Testing", "Dummy Data", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "595",
+      "name": "Page Ruler Redux",
+      "description": "A ruler to get perfect pixel dimensions and positioning to measure elements on any web page.",
+      "url": "https://chrome.google.com/webstore/detail/page-ruler-redux/giejhjebcalaheckengmchjekofhhmal",
+      "category": "chrome-extensions",
+      "tags": ["Ruler", "Measure", "Dimensions", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "596",
+      "name": "Web Editor",
+      "description": "Inspect any website elements, alter their properties, insert contents, design, and visualize.",
+      "url": "https://chrome.google.com/webstore/detail/web-editor/pdmlhckofhkhebmcplblcijijgjiakcm",
+      "category": "chrome-extensions",
+      "tags": ["Editor", "Inspect", "Design", "Visualize", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "597",
+      "name": "CSSViewer",
+      "description": "A simple CSS property viewer.",
+      "url": "https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce",
+      "category": "chrome-extensions",
+      "tags": ["CSS", "Viewer", "Inspect", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "598",
+      "name": "Fonts Ninja",
+      "description": "Identify fonts from any website, bookmark, try, and buy them.",
+      "url": "https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh",
+      "category": "chrome-extensions",
+      "tags": ["Fonts", "Identify Fonts", "Design", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "599",
+      "name": "Lighthouse",
+      "description": "An open-source, automated tool for improving the performance, quality, and correctness of your web apps.",
+      "url": "https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk",
+      "category": "chrome-extensions",
+      "tags": ["Performance", "Audit", "SEO", "Lighthouse", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "600",
+      "name": "Debug CSS",
+      "description": "Adds outline to all elements on the page to show the culprit element which is changing desired layout.",
+      "url": "https://chrome.google.com/webstore/detail/debug-css/igiofjnckcagmjgdoaakafngegecjnkj",
+      "category": "chrome-extensions",
+      "tags": ["CSS", "Debug", "Layout", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "601",
+      "name": "UX Check",
+      "description": "Identify usability issues through a heuristic evaluation.",
+      "url": "https://chrome.google.com/webstore/detail/ux-check/giekhiebdpmljgchjojblnekkcgpdobp",
+      "category": "chrome-extensions",
+      "tags": ["UX", "Usability", "Heuristics", "Check", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "602",
+      "name": "Angular Developer Tool",
+      "description": "Allows you to understand the structure of your application and preview the state of the directive and component instances.",
+      "url": "https://chrome.google.com/webstore/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh",
+      "category": "chrome-extensions",
+      "tags": ["Angular", "Developer Tools", "Debug", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "603",
+      "name": "Redux Developer Tool",
+      "description": "Redux DevTools provides power-ups for your Redux development workflow.",
+      "url": "https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["Redux", "Developer Tools", "Debug", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "604",
+      "name": "Hackertab.dev",
+      "description": "Hackertab helps developers stay up-to-date with the latest dev news and resources in one tab.",
+      "url": "https://chrome.google.com/webstore/detail/hackertabdev-developer-ne/ocoipcahhaedjhnpoanfflhbdcpmalmp",
+      "category": "chrome-extensions",
+      "tags": ["News", "Developer", "Resources", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "605",
+      "name": "JSON Formatter",
+      "description": "Formats and colors JSON content for better readability. It can also collapse and expand nested structures.",
+      "url": "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["JSON", "Formatter", "Viewer", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "606",
+      "name": "SEO Minion",
+      "description": "A SEO tool that includes features like on-page SEO analysis, broken link checking, and SERP preview.",
+      "url": "https://chrome.google.com/webstore/detail/seo-minion/giihipjfimkajhlcilipnjeohabimjhi?hl=en",
+      "category": "chrome-extensions",
+      "tags": ["SEO", "Analysis", "Broken Links", "SERP", "Chrome"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "607",
+      "name": "WhatFont",
+      "description": "Identify fonts on web pages.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/zjm-whatfont/",
+      "category": "firefox-extensions",
+      "tags": ["Fonts", "Identify Fonts", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "608",
+      "name": "WhatRuns",
+      "description": "Discover technologies used on websites.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/whatruns/",
+      "category": "firefox-extensions",
+      "tags": ["Tech Stack", "Profiler", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "609",
+      "name": "Web Developer",
+      "description": "Toolbar for web development tasks.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/web-developer/",
+      "category": "firefox-extensions",
+      "tags": ["Developer Tools", "Toolbar", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "610",
+      "name": "Awesome Screenshot & Screen Recorder",
+      "description": "Capture and annotate screenshots.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/screenshot-capture-annotate/",
+      "category": "firefox-extensions",
+      "tags": ["Screenshot", "Capture", "Annotate", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "611",
+      "name": "daily.dev - News for Busy Developers",
+      "description": "Developer news and resources.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/daily/",
+      "category": "firefox-extensions",
+      "tags": ["News", "Developer", "Resources", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "612",
+      "name": "JSONView",
+      "description": "Format and syntax highlight JSON.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/jsonview/",
+      "category": "firefox-extensions",
+      "tags": ["JSON", "Viewer", "Formatter", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "613",
+      "name": "Window Resizer",
+      "description": "Resize browser window to predefined dimensions.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/window-resizer-webextension/",
+      "category": "firefox-extensions",
+      "tags": ["Responsive", "Testing", "Resizer", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "614",
+      "name": "Responsive Viewer",
+      "description": "Test responsive design of websites.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/responsify-viewer/",
+      "category": "firefox-extensions",
+      "tags": ["Responsive", "Testing", "Viewer", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "615",
+      "name": "BrowserStack",
+      "description": "Instantly preview websites on different devices.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/browserstack-toolbar-toggle/",
+      "category": "firefox-extensions",
+      "tags": ["Testing", "Cross-Browser", "BrowserStack", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "616",
+      "name": "VisBug",
+      "description": "Web design debugging tool.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/visbug/",
+      "category": "firefox-extensions",
+      "tags": ["Design", "Debug", "CSS", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "617",
+      "name": "Kontrast - WCAG Contrast Checker",
+      "description": "Check contrast levels for accessibility.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/",
+      "category": "firefox-extensions",
+      "tags": ["Accessibility", "Contrast", "WCAG", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "618",
+      "name": "PerfectPixel",
+      "description": "Overlay an image over a web page to compare.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/pixel-perfect-pro/",
+      "category": "firefox-extensions",
+      "tags": ["Pixel Perfect", "Design", "Comparison", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "619",
+      "name": "Pesticide",
+      "description": "Outline elements on web page for easy visualization.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/pesticide-for-firefox/",
+      "category": "firefox-extensions",
+      "tags": ["CSS", "Layout", "Debug", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "620",
+      "name": "Site Palette",
+      "description": "Extract color palette from website.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/website-color-palette/",
+      "category": "firefox-extensions",
+      "tags": ["Color", "Palette", "Design", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "621",
+      "name": "ColorZilla",
+      "description": "Advanced color picker and eyedropper.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/colorzilla/",
+      "category": "firefox-extensions",
+      "tags": ["Color", "Picker", "Eyedropper", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "622",
+      "name": "Lorem Ipsum Generator (Default Text)",
+      "description": "Generate lorem ipsum text.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/openlorem/",
+      "category": "firefox-extensions",
+      "tags": ["Lorem Ipsum", "Generator", "Text", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "623",
+      "name": "JavaScript and CSS Code Beautifier",
+      "description": "Beautify and minify JavaScript and CSS code.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/beautifer-minify/",
+      "category": "firefox-extensions",
+      "tags": ["Beautifier", "Minifier", "JavaScript", "CSS", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "624",
+      "name": "Imageye - Image downloader",
+      "description": "Download images from web pages.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/imageye_image_downloader/",
+      "category": "firefox-extensions",
+      "tags": ["Image", "Downloader", "Extractor", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "625",
+      "name": "Fireshot - Full Page Screen Capture",
+      "description": "Capture full web pages.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/fireshot/",
+      "category": "firefox-extensions",
+      "tags": ["Screenshot", "Capture", "Full Page", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "626",
+      "name": "Stylebot",
+      "description": "Customize the appearance of web pages.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/stylebot-web/",
+      "category": "firefox-extensions",
+      "tags": ["CSS", "Styler", "Customization", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "627",
+      "name": "ColorPick Eyedropper",
+      "description": "Simple color picker and eyedropper.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/colorpick-eyedropper/",
+      "category": "firefox-extensions",
+      "tags": ["Color", "Picker", "Eyedropper", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "628",
+      "name": "React Developer Tool",
+      "description": "Inspect React component hierarchy.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/react-devtools/",
+      "category": "firefox-extensions",
+      "tags": ["React", "Developer Tools", "Debug", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "629",
+      "name": "Wappalyzer",
+      "description": "Identify technologies used on websites.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/",
+      "category": "firefox-extensions",
+      "tags": ["Tech Stack", "Profiler", "Wappalyzer", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "630",
+      "name": "Fake Filler",
+      "description": "Fill out web forms with dummy data.",
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/fake-filler/",
+      "category": "firefox-extensions",
+      "tags": ["Form Filler", "Testing", "Dummy Data", "Firefox"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "631",
+      "name": "Leonardo.Ai",
+      "description": "Leonardo AI is an AI-powered design tool that can help you create designs based on reference images.",
+      "url": "https://leonardo.ai/",
+      "category": "ai-tools",
+      "tags": ["AI", "Design", "Image Generation"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "632",
+      "name": "Galileo AI",
+      "description": "Galileo AI is a UI generation platform for easy and fast design ideation. It allows users to generate interface designs from text.",
+      "url": "https://www.usegalileo.ai/",
+      "category": "ai-tools",
+      "tags": ["AI", "UI", "Design", "Generator"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "633",
+      "name": "ImgGen.Ai",
+      "description": "ImgGen AI is a free AI-powered image generator and enhancement tool.",
+      "url": "https://imggen.ai/",
+      "category": "ai-tools",
+      "tags": ["AI", "Image Generation", "Enhancement"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "634",
+      "name": "Unblurimage.Ai",
+      "description": "Unblurimage AI is 100% Free, No Sign-Up online tool for unblur image.",
+      "url": "https://unblurimage.ai/",
+      "category": "ai-tools",
+      "tags": ["AI", "Image", "Unblur", "Enhancement"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "635",
+      "name": "VMind",
+      "description": "VMind is an intelligent visualization suit that provides intelligent interfaces through rule algorithms, machine learning, and LLM.",
+      "url": "https://visactor.io/vmind",
+      "category": "ai-tools",
+      "tags": ["AI", "Visualization", "LLM", "Machine Learning"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "636",
+      "name": "Free AI Diagram Generator",
+      "description": "a free AI-powered platform that helps you create various types of diagrams with ease.",
+      "url": "https://diagram-generator.com/",
+      "category": "ai-tools",
+      "tags": ["AI", "Diagram", "Generator", "Visualization"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "637",
+      "name": "Figpeek",
+      "description": "Figpeek is a new Figma and GitHub thumbnail generator.",
+      "url": "https://figpeek.vercel.app/",
+      "category": "others",
+      "tags": ["Figma", "GitHub", "Thumbnail", "Generator"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "638",
+      "name": "Image Extractor",
+      "description": "Online tool for extracting all images and SVGs of a website, all you is just to drop the URL.",
+      "url": "https://extract.pics/",
+      "category": "others",
+      "tags": ["Image", "SVG", "Extractor"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "639",
+      "name": "Vertopal",
+      "description": "Free online platform for converting computer files to a variety of file formats.",
+      "url": "https://www.vertopal.com/",
+      "category": "others",
+      "tags": ["File Converter", "Online Tool"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "640",
+      "name": "everysize.kibalabs.com",
+      "description": "Check your awesome responsive webpage looks great in every size.",
+      "url": "https://everysize.kibalabs.com/",
+      "category": "others",
+      "tags": ["Responsive", "Testing", "Viewer"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "641",
+      "name": "Devhints.io",
+      "description": "This is a modest collection of cheatsheets on Internet.",
+      "url": "https://devhints.io/",
+      "category": "others",
+      "tags": ["Cheatsheets", "Developer", "Resources"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "642",
+      "name": "The Web Toolbox",
+      "description": "A collection of handy, free-to-use tools for web developers, programmers and designers.",
+      "url": "https://thewebtoolbox.cc/",
+      "category": "others",
+      "tags": ["Toolbox", "Developer Tools", "Design Tools"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "643",
+      "name": "WebDevTrick",
+      "description": "A famous blog for many amazing HTML, CSS, JQuery designs.",
+      "url": "https://webdevtrick.com/",
+      "category": "others",
+      "tags": ["Blog", "HTML", "CSS", "JQuery", "Design"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "644",
+      "name": "css-tricks",
+      "description": "Free CSS tricks and some unique ideas for beginners and advanced.",
+      "url": "https://css-tricks.com/",
+      "category": "others",
+      "tags": ["CSS", "Tricks", "Blog", "Tutorials"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "645",
+      "name": "Material Design Resources",
+      "description": "Use Material tools, downloads, and interactive projects to simplify your workflow.",
+      "url": "https://material.io/resources",
+      "category": "others",
+      "tags": ["Material Design", "Resources", "Tools"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "646",
+      "name": "Nodesign.dev",
+      "description": "A collection of tools for developers who have little to no artistic talent.",
+      "url": "https://nodesign.dev",
+      "category": "others",
+      "tags": ["Design Tools", "Developer", "Resources"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "647",
+      "name": "A11ygator",
+      "description": "A web tool to scan websites against WCAG rules.",
+      "url": "https://a11ygator.chialab.io/",
+      "category": "others",
+      "tags": ["Accessibility", "WCAG", "Scanner", "A11y"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "648",
+      "name": "Commitizen",
+      "description": "Command line tool to formatted commit messages according to the standards.",
+      "url": "http://commitizen.github.io/cz-cli/",
+      "category": "others",
+      "tags": ["Git", "Commit", "CLI", "Standards"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "649",
+      "name": "CleanCss",
+      "description": "Tool For Code Formatter, Minifier, File Converter.",
+      "url": "https://www.cleancss.com/",
+      "category": "others",
+      "tags": ["CSS", "Formatter", "Minifier", "Converter"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "650",
+      "name": "Tiny helpers",
+      "description": "A collection of free single-purpose online tools for web developers.",
+      "url": "https://tiny-helpers.dev/",
+      "category": "others",
+      "tags": ["Developer Tools", "Online Tools", "Utilities"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "651",
+      "name": "CSS Ribbon Generator",
+      "description": "This generator will assist in creating a pure CSS corner ribbon.",
+      "url": "https://www.cssportal.com/css-ribbon-generator/",
+      "category": "others",
+      "tags": ["CSS", "Generator", "Ribbon"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "652",
+      "name": "Can I Use",
+      "description": "Check cross-browser compatibility of frontend technologies.",
+      "url": "https://caniuse.com/",
+      "category": "others",
+      "tags": ["Compatibility", "Cross-Browser", "CSS", "HTML", "JS"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "653",
+      "name": "kangax-js-compat-table",
+      "description": "Check JavaScript versions (ES5, ES6, ES2016+ etc.) compatibility across different compilers, servers/runtimes and platforms.",
+      "url": "https://compat-table.github.io/compat-table/es6/",
+      "category": "others",
+      "tags": ["JavaScript", "Compatibility", "ES6", "ECMAScript"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "654",
+      "name": "mydevice.io",
+      "description": "Most commonly used device resolutions including phones and tablets.",
+      "url": "https://www.mydevice.io/",
+      "category": "others",
+      "tags": ["Device", "Resolution", "Responsive", "Testing"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "655",
+      "name": "Codepen",
+      "description": "Build, test and discover frontend code.",
+      "url": "https://codepen.io/",
+      "category": "others",
+      "tags": ["Frontend", "Playground", "HTML", "CSS", "JS"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "656",
+      "name": "Responsively",
+      "description": "A tool for designers and frontend developers to design and debug their in all platforms with ease.",
+      "url": "https://responsively.app",
+      "category": "others",
+      "tags": ["Responsive", "Testing", "Developer Tools"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "657",
+      "name": "html2pdf.js",
+      "description": "Client-side HTML-to-PDF rendering using pure JS.",
+      "url": "https://ekoopmans.github.io/html2pdf.js/",
+      "category": "others",
+      "tags": ["HTML", "PDF", "JavaScript", "Library"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "658",
+      "name": "CSS Reference",
+      "description": "A collection of all css properties and definitions in detail.",
+      "url": "https://cssreference.io/",
+      "category": "others",
+      "tags": ["CSS", "Reference", "Documentation"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "659",
+      "name": "Critical Path CSS Generator",
+      "description": "Generate critical css for your web pages.",
+      "url": "https://www.sitelocity.com/critical-path-css-generator",
+      "category": "others",
+      "tags": ["CSS", "Critical CSS", "Performance", "Generator"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "660",
+      "name": "SVG Gobbler",
+      "description": "Browser extension to find SVGs on a webpage and download, copy to clipboard, or export as PNG.",
+      "url": "https://github.com/rossmoody/svg-gobbler",
+      "category": "others",
+      "tags": ["SVG", "Extractor", "Downloader", "Browser Extension"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "661",
+      "name": "shortcode.dev",
+      "description": "A collection of useful snippets and code examples for HTML, CSS, JavaScript, Node, Artisan, Blade and more.",
+      "url": "https://shortcode.dev",
+      "category": "others",
+      "tags": ["Snippets", "Code Examples", "Developer Resources"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "662",
+      "name": "30secondsofcode.org",
+      "description": "A wide variety of snippet and article collections for CSS, JavaScript, Python and more.",
+      "url": "https://www.30secondsofcode.org/",
+      "category": "others",
+      "tags": ["Snippets", "Code Examples", "Tutorials"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "663",
+      "name": "PlayCode",
+      "description": "Javascript playground.",
+      "url": "https://playcode.io/",
+      "category": "others",
+      "tags": ["JavaScript", "Playground", "Editor"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "664",
+      "name": "All The Tags",
+      "description": "All HTML tags briefly explained.",
+      "url": "https://allthetags.com/",
+      "category": "others",
+      "tags": ["HTML", "Tags", "Reference"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "665",
+      "name": "Vue Telemetry",
+      "description": "Reveal the Vue plugins and technology stack powering any website or explore a database of 5500+ websites.",
+      "url": "https://vuetelemetry.com/",
+      "category": "others",
+      "tags": ["Vue", "Tech Stack", "Profiler"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "666",
+      "name": "Grid.js",
+      "description": "Grid.js is a Free and open-source HTML table plugin written in TypeScript. It works with most JavaScript frameworks.",
+      "url": "https://gridjs.io/",
+      "category": "others",
+      "tags": ["Grid", "Table", "JavaScript", "Plugin"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "667",
+      "name": "Gerillass",
+      "description": "Gerillass is a website development tool built on top of Sass with a set of Sass mixins and functions.",
+      "url": "https://gerillass.com/",
+      "category": "others",
+      "tags": ["Sass", "CSS", "Framework", "Mixins"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "668",
+      "name": "Sketchize",
+      "description": "Sketchize is built for UI/UX Designers to help them design lovely apps for mobile, tablet, and desktop devices.",
+      "url": "https://www.sketchize.com/",
+      "category": "others",
+      "tags": ["UI", "UX", "Sketching", "Templates", "Design"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "669",
+      "name": "{CSS}Portal",
+      "description": "CSSPortal is home to a large range of CSS generators, tools and resources.",
+      "url": "https://www.cssportal.com/",
+      "category": "others",
+      "tags": ["CSS", "Generator", "Tools", "Resources"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "670",
+      "name": "DevDocs",
+      "description": "DevDocs combines multiple API documentations in a fast, organized, and searchable interface.",
+      "url": "https://devdocs.io/",
+      "category": "others",
+      "tags": ["Documentation", "API", "Developer", "Reference"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "671",
+      "name": "papersizes",
+      "description": "The best resource for International Paper Sizes, Dimensions & Formats.",
+      "url": "https://papersizes.io/",
+      "category": "others",
+      "tags": ["Paper", "Sizes", "Dimensions", "Reference"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "672",
+      "name": "flexboxfroggy",
+      "description": "Help Froggy and friends by writing CSS code!",
+      "url": "http://flexboxfroggy.com/",
+      "category": "others",
+      "tags": ["CSS", "Flexbox", "Game", "Learning"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "673",
+      "name": "Designbetter Books",
+      "description": "Essential reading on the practices that propel the best design teams forward.",
+      "url": "https://www.designbetter.co/books",
+      "category": "others",
+      "tags": ["Design", "Books", "Resources", "Learning"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "674",
+      "name": "OverAPI",
+      "description": "Collection Of All Cheat Sheets.",
+      "url": "https://overapi.com/",
+      "category": "others",
+      "tags": ["Cheatsheets", "API", "Reference", "Developer"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "675",
+      "name": "Pageclip",
+      "description": "A server for your Static HTML forms.",
+      "url": "https://pageclip.co/",
+      "category": "others",
+      "tags": ["Forms", "HTML", "Backend", "Serverless"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "676",
+      "name": "Shields",
+      "description": "Create badges with your own customization.",
+      "url": "https://shields.io",
+      "category": "others",
+      "tags": ["Badges", "SVG", "GitHub", "Markdown"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "677",
+      "name": "williamsharkey",
+      "description": "Random SVG Graphic Generator.",
+      "url": "http://williamsharkey.com/Shapes.html",
+      "category": "others",
+      "tags": ["SVG", "Generator", "Graphics", "Random"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "678",
+      "name": "Bootstrap CheatSheet",
+      "description": "An interactive list of Bootstrap classes, variables, and mixins.",
+      "url": "https://bootstrap-cheatsheet.themeselection.com/",
+      "category": "others",
+      "tags": ["Bootstrap", "Cheatsheet", "CSS", "Framework"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "679",
+      "name": "QR Code Generator",
+      "description": "Use QR Code Generator to easily create a QR code for your project.",
+      "url": "https://markodenic.com/tools/qr-code-generator/",
+      "category": "others",
+      "tags": ["QR Code", "Generator", "Tool"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "680",
+      "name": "PapersDB",
+      "description": "The Biggest Paper Database with Sizes, Dimensions and Formats in Metric and Imperial units.",
+      "url": "https://papersdb.com/",
+      "category": "others",
+      "tags": ["Paper", "Sizes", "Dimensions", "Database"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "681",
+      "name": "SETools.xyz",
+      "description": "Free Online tools website for work.",
+      "url": "https://www.setools.xyz/",
+      "category": "others",
+      "tags": ["Online Tools", "Utilities", "Developer"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "682",
+      "name": "SmallDev.tools",
+      "description": "Free tool for developers to help with Beautify & Minify HTML/CSS/Javascript, and many other handy tools.",
+      "url": "https://SmallDev.tools/",
+      "category": "others",
+      "tags": ["Developer Tools", "Beautify", "Minify", "Utilities"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "683",
+      "name": "Angry Tools",
+      "description": "Free web tools for speed up your development.",
+      "url": "https://angrytools.com/",
+      "category": "others",
+      "tags": ["Web Tools", "Developer", "Productivity"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "684",
+      "name": "Rapid API",
+      "description": "Discover and connect to thousands of APIs.",
+      "url": "https://rapidapi.com/hub",
+      "category": "others",
+      "tags": ["API", "Marketplace", "Integration"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "685",
+      "name": "Readme.so",
+      "description": "The easisest way to create a README.",
+      "url": "https://readme.so",
+      "category": "others",
+      "tags": ["README", "Generator", "Markdown", "GitHub"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "686",
+      "name": "Showcode",
+      "description": "Beautiful code screenshot generator.",
+      "url": "https://showcode.app",
+      "category": "others",
+      "tags": ["Code", "Screenshot", "Generator", "Design"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "687",
+      "name": "tldraw",
+      "description": "A tiny little drawing app.",
+      "url": "https://www.tldraw.com",
+      "category": "others",
+      "tags": ["Drawing", "Whiteboard", "Collaboration", "App"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "688",
+      "name": "devices.css",
+      "description": "Pure CSS phones and tablets by Marvel App.",
+      "url": "http://marvelapp.github.io/devices.css/",
+      "category": "others",
+      "tags": ["CSS", "Devices", "Mockup", "Library"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "689",
+      "name": "Troopl",
+      "description": "Build and publish a free portfolio in minutes.",
+      "url": "https://troopl.com",
+      "category": "others",
+      "tags": ["Portfolio", "Website Builder", "Free"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "690",
+      "name": "Apifox",
+      "description": "Apifox = Postman + Swagger + Mock + JMeter.",
+      "url": "https://apifox.cn",
+      "category": "others",
+      "tags": ["API", "Testing", "Documentation", "Mocking"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "691",
+      "name": "A Modern CSS Reset",
+      "description": "Resets the css styling of all HTML elements to a consistent baseline across browsers.",
+      "url": "https://piccalil.li/blog/a-modern-css-reset/",
+      "category": "others",
+      "tags": ["CSS", "Reset", "Boilerplate"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "692",
+      "name": "Clipperly",
+      "description": "All-in-one free online file service, convert, edit and optimize your files.",
+      "url": "https://clipperly.com/",
+      "category": "others",
+      "tags": ["File Converter", "Editor", "Optimizer", "Online Tool"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "693",
+      "name": "DebugBear Speed Test",
+      "description": "Test and optimize page load speed.",
+      "url": "https://www.debugbear.com/test/website-speed",
+      "category": "others",
+      "tags": ["Performance", "Speed Test", "Optimization"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "694",
+      "name": "Code Beautify",
+      "description": "Free Online Tools like Code Beautifiers, Code Formatters, Editors, Viewers, Minifier, Validators, Converters for Developers.",
+      "url": "https://codebeautify.org/",
+      "category": "others",
+      "tags": ["Beautifier", "Formatter", "Converter", "Online Tools"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "695",
+      "name": "Vue CheatSheet",
+      "description": "An interactive cheatsheet of Vue, Vue Router, and Pinia.",
+      "url": "https://vue-cheatsheet.themeselection.com/",
+      "category": "others",
+      "tags": ["Vue", "Cheatsheet", "Vue Router", "Pinia"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "696",
+      "name": "appydev",
+      "description": "A collection of awesome tools, resources and products for people who create and live on the internet.",
+      "url": "https://appydev.co/",
+      "category": "others",
+      "tags": ["Tools", "Resources", "Developer", "Products"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "697",
+      "name": "ExtendsClass",
+      "description": "Free online tools for developers, including image compressors/encoders, code formatters, code playgrounds, and many other handy utilities.",
+      "url": "https://extendsclass.com/",
+      "category": "others",
+      "tags": ["Online Tools", "Developer", "Utilities", "Playground"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "698",
+      "name": "RunJS",
+      "description": "Free online JavaScript playground.",
+      "url": "https://runjs.app/play",
+      "category": "others",
+      "tags": ["JavaScript", "Playground", "Online Editor"],
+      "featured": false,
+      "free": true
+    },
+    {
+      "id": "699",
+      "name": "Pillarstack",
+      "description": "Assorted resources for frontend developers and web designers.",
+      "url": "https://www.pillarstack.com/",
+      "category": "others",
+      "tags": ["Resources", "Frontend", "Design", "Developer"],
+      "featured": false,
+      "free": true
+    },
+    
+      {
+        "id": "700",
+        "name": "Magnus UI",
+        "description": "Magnus UI is the ultimate UI framework that helps you in building consistent user interfaces effortlessly in react native.",
+        "url": "https://magnus-ui.com/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Framework", "Components"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "701",
+        "name": "React Native UI Lib",
+        "description": "React Native UI (RNUI) is a UI Toolset & Components Library for React Native from Wix.",
+        "url": "https://wix.github.io/react-native-ui-lib/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Library", "Components", "Wix"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "702",
+        "name": "React Native Paper",
+        "description": "React Native Paper is a high-quality, standard-compliant Material Design library that has you covered in all major use-cases.",
+        "url": "https://reactnativepaper.com/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Library", "Material Design", "Components"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "703",
+        "name": "UI Kitten",
+        "description": "UI Kitten is React Native framework for creating stunning cross-platform mobile applications. Design system based, brings your product from MVP to enterprise.",
+        "url": "https://akveo.github.io/react-native-ui-kitten/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Framework", "Design System", "Cross-Platform"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "704",
+        "name": "React Native Elements",
+        "description": "Cross Platform React Native UI Toolkit that provides an all-in-one UI kit for creating apps in react native.",
+        "url": "https://reactnativeelements.com/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Toolkit", "Components", "Cross-Platform"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "705",
+        "name": "NativeBase",
+        "description": "Essential cross-platform UI components for React Native & Vue Native.",
+        "url": "https://nativebase.io/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "Vue Native", "UI Components", "Cross-Platform"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "706",
+        "name": "Shoutem UI",
+        "description": "Shoutem UI toolkit enables you to build professionally looking React Native apps with ease.",
+        "url": "https://shoutem.github.io/docs/ui-toolkit/introduction",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Toolkit", "Components"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "707",
+        "name": "tailwind-rn",
+        "description": "Use Tailwind CSS in React Native projects.",
+        "url": "https://github.com/vadimdemedes/tailwind-rn",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "Tailwind CSS", "Styling"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "708",
+        "name": "Ant Design Mobile RN",
+        "description": "An Ant design based configurable Mobile UI component library based on React Native.",
+        "url": "https://rn.mobile.ant.design/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Library", "Ant Design", "Components"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "709",
+        "name": "SnackUI",
+        "description": "SnackUI is a UI Kit for React Native + react-native-web that's much faster with an optimizing compiler.",
+        "url": "https://github.com/snackui/snackui",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "UI Kit", "Compiler", "Performance"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "710",
+        "name": "Moti",
+        "description": "Moti is the universal animation package for React Native.",
+        "url": "https://moti.fyi/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "Animation", "Library"],
+        "featured": false,
+        "free": true
+      },
+      {
+        "id": "711",
+        "name": "Tamagui",
+        "description": "Universal React design systems that optimize for native & web.",
+        "url": "https://tamagui.dev/",
+        "category": "react-native-ui-libraries",
+        "tags": ["React Native", "Universal", "Design System", "Performance"],
+        "featured": false,
+        "free": true
+      },      
+        {
+          "id": "712",
+          "name": "Svelte Material UI",
+          "description": "UI library for Svelte based on Material Design.",
+          "url": "https://sveltematerialui.com/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Library", "Material Design", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "713",
+          "name": "SvelteStrap",
+          "description": "UI library for Svelte based on the Bootstrap framework.",
+          "url": "https://bestguy.github.io/sveltestrap/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Library", "Bootstrap", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "714",
+          "name": "Svelte Flat UI",
+          "description": "UI library for Svelte based on Flat Design.",
+          "url": "https://svelteui.js.org/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Library", "Flat Design", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "715",
+          "name": "Attractions",
+          "description": "A pretty cool UI kit for Svelte.",
+          "url": "https://illright.github.io/attractions/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Kit", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "716",
+          "name": "Svelteit",
+          "description": "A minimalistic UI/UX component library for Svelte and Sapper projects.",
+          "url": "https://docs.svelteit.dev",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Library", "Minimalistic", "Sapper"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "717",
+          "name": "Carbon Components Svelte",
+          "description": "A component library that implements the Carbon Design System, an open source design system by IBM.",
+          "url": "https://carbon-components-svelte.onrender.com/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "Component Library", "Carbon Design System", "IBM"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "718",
+          "name": "Radix Svelte",
+          "description": "This is a port of Radix UI for Svelte.",
+          "url": "https://www.radix-svelte.com/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "Radix UI", "Headless", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "719",
+          "name": "shadcn-svelte",
+          "description": "shadcn-svelte is an unofficial community-led Svelte port of shadcn/ui.",
+          "url": "https://www.shadcn-svelte.com/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "shadcn", "Components", "Tailwind CSS"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "720",
+          "name": "Skeleton",
+          "description": "Skeleton is an open source UI toolkit built with Svelte + Tailwind that allows you to create reactive web interfaces using Svelte + Tailwind CSS.",
+          "url": "https://www.skeleton.dev/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Toolkit", "Tailwind CSS", "SvelteKit"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "721",
+          "name": "Aceternity UI Svelte",
+          "description": "Free Incredible Animated Components.",
+          "url": "https://aceternity.sveltekit.io/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "Animation", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "722",
+          "name": "Svelte UX",
+          "description": "Collection of Svelte components, actions, stores, and utilities to build highly interactive applications.",
+          "url": "https://svelte-ux.techniq.dev/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UX", "Components", "Actions", "Stores"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "723",
+          "name": "Flowbite-Svelte",
+          "description": "Flowbite-svelte is an open-source UI component library built with Svelte components, Tailwind CSS utility classes and based on the Flowbite design system.",
+          "url": "https://flowbite-svelte.com/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "UI Library", "Flowbite", "Tailwind CSS"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "724",
+          "name": "bits-ui",
+          "description": "The headless components for Svelte.",
+          "url": "https://www.bits-ui.com/",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "Headless", "Components", "Builders"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "725",
+          "name": "melt-ui",
+          "description": "A set of headless, accessible component builders for Svelte.",
+          "url": "https://melt-ui.com",
+          "category": "svelte-ui-libraries",
+          "tags": ["Svelte", "Headless", "Accessible", "Builders"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "726",
+          "name": "Element",
+          "description": "Desktop UI library for Vue.",
+          "url": "https://element.eleme.io/#/en-US",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Library", "Desktop", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "727",
+          "name": "Fish UI",
+          "description": "Vue UI toolkit for the web.",
+          "url": "https://myliang.github.io/fish-ui/#/components/index",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Toolkit", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "728",
+          "name": "Keen UI",
+          "description": "VueUI library with a simple API, inspired by Google's Material Design.",
+          "url": "https://josephuspaye.github.io/Keen-UI",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Library", "Material Design"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "729",
+          "name": "Materio Vuetify Vuejs Admin Template",
+          "description": "Open-source & Easy to use Vuetify Vuejs Admin Template with Elegant Design & Unique Layout.",
+          "url": "https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Admin Template", "Vuetify", "Material Design"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "730",
+          "name": "Onsen Vue",
+          "description": "Distributes Components for hybrid mobile apps with Vue and Onsen UI.",
+          "url": "https://onsen.io/vue/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Mobile", "Hybrid Apps", "Onsen UI"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "731",
+          "name": "Vuejsexamples",
+          "description": "A nice collection of useful vuejs UI components.",
+          "url": "https://vuejsexamples.com",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Components", "Examples", "Collection"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "732",
+          "name": "Inkline",
+          "description": "Inkline is a modern UI/UX Framework for Vue.js designed for creating flawless responsive web applications.",
+          "url": "https://inkline.io",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Framework", "Responsive"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "733",
+          "name": "Vuesax",
+          "description": "Unique and reusable UI components.",
+          "url": "https://vuesax.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Components", "Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "734",
+          "name": "Antdv",
+          "description": "UI library for Vue based on Ant Design.",
+          "url": "https://antdv.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Library", "Ant Design"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "735",
+          "name": "Shards Vue",
+          "description": "A high-quality & free Vue UI kit featuring a modern design system with dozens of custom components.",
+          "url": "https://designrevision.com/downloads/shards-vue/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Kit", "Design System", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "736",
+          "name": "Prime Vue",
+          "description": "Powerful yet simple to use, versatile, performant Vue UI Component Library to help you build stunning user interfaces.",
+          "url": "https://primevue.org/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Component Library", "Performance"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "737",
+          "name": "Chakra UI Vue",
+          "description": "Chakra UI is a simple modular and accessible component library that gives you the building blocks to build Vue applications with speed.",
+          "url": "https://vue.chakra-ui.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Chakra UI", "Component Library", "Accessible"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "738",
+          "name": "View UI",
+          "description": "Dozens of useful and beautiful Vue components made for people with all skill levels with extensive documentation.",
+          "url": "https://www.iviewui.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Components", "UI Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "739",
+          "name": "@tsparticles/vue2",
+          "description": "A lightweight Vue 2.x component for creating particles.",
+          "url": "https://github.com/tsparticles/vue2",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Particles", "Animation", "Vue 2"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "740",
+          "name": "@tsparticles/vue3",
+          "description": "A lightweight Vue 3.x component for creating particles.",
+          "url": "https://github.com/tsparticles/vue3",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Particles", "Animation", "Vue 3"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "741",
+          "name": "TC Components",
+          "description": "A library of high-quality ready to use components that will help you speed up your development workflow.",
+          "url": "https://components.timos.design",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Components", "Workflow"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "742",
+          "name": "Vant",
+          "description": "Lightweight Mobile UI Components built on Vue.",
+          "url": "https://youzan.github.io/vant",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Mobile", "UI Components", "Lightweight"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "743",
+          "name": "Equal UI",
+          "description": "Open-source Vue 3 components system for your next project based on TypeScript.",
+          "url": "https://quatrochan.github.io/Equal/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Vue 3", "TypeScript", "Component System"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "744",
+          "name": "Mint UI",
+          "description": "Mobile UI elements for Vue.js.",
+          "url": "https://mint-ui.github.io/#!/en",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Mobile", "UI Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "745",
+          "name": "Cube UI",
+          "description": "A fantastic mobile ui lib implement by Vue.js.",
+          "url": "https://didi.github.io/cube-ui/#/en-US",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Mobile", "UI Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "746",
+          "name": "Muse UI",
+          "description": "Based on the Vue 2.0 elegant Material Design UI component library.",
+          "url": "https://muse-ui.org/#/en-US",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Material Design", "Component Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "747",
+          "name": "AT-UI",
+          "description": "AT-UI is a modular front-end UI framework for developing fast and powerful web interfaces based on Vue.js.",
+          "url": "https://at-ui.github.io/at-ui/#/en",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Framework", "Modular"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "748",
+          "name": "Vuikit",
+          "description": "A consistent and responsive Vue UI library, based on the front-end framework UIkit.",
+          "url": "https://vuikit.js.org/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Library", "Responsive", "UIkit"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "749",
+          "name": "Wave UI",
+          "description": "A Vue.js UI framework with only the bright side.",
+          "url": "https://antoniandre.github.io/wave-ui/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Framework", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "750",
+          "name": "VueTailwind",
+          "description": "Set of Lightview and fully customizable Vue Components optimized for TailwindCSS.",
+          "url": "https://www.vue-tailwind.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Tailwind CSS", "Components", "Customizable"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "751",
+          "name": "Oruga",
+          "description": "Oruga is a lightweight library of UI components for Vue.js without CSS framework dependency.",
+          "url": "https://oruga.io/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "UI Components", "Lightweight", "CSS Agnostic"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "752",
+          "name": "BalmUI",
+          "description": "BalmUI is a modular and customizable Material Design UI library for Vue.js.",
+          "url": "https://material.balmjs.com/#/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Material Design", "UI Library", "Modular"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "753",
+          "name": "Weex UI",
+          "description": "A rich interaction, lightweight, high performance UI library based on Weex.",
+          "url": "https://github.com/apache/incubator-weex-ui",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Weex", "UI Library", "Performance"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "754",
+          "name": "Varlet",
+          "description": "Varlet is a Material design mobile component library developed based on Vue3, developed and maintained by partners in the community.",
+          "url": "https://github.com/haoziqaq/varlet",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Vue 3", "Material Design", "Mobile", "Component Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "755",
+          "name": "Naive UI",
+          "description": "A Vue 3 Component Library. Fairly Complete. Customizable Themes. Uses TypeScript. Not too Slow.",
+          "url": "https://www.naiveui.com/en-US/os-theme",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Vue 3", "Component Library", "TypeScript"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "756",
+          "name": "Vuestic",
+          "description": "Free and Open Source UI Library for Vue 3 🤘.",
+          "url": "https://vuestic.dev/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Vue 3", "UI Library", "Open Source"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "757",
+          "name": "Vue Final Modal",
+          "description": "Vue Final Modal is a tiny, renderless, mobile-friendly, feature-rich modal component for Vue.js.",
+          "url": "https://vue-final-modal.org/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Modal", "Component", "Renderless"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "758",
+          "name": "Vuetensils",
+          "description": "Vuetensils is a lightweight component library for Vue 2.x that brings some of most common UI features, but only the bare minimum styles to avoid adding any extra bloat. You can work on the branding, and don't have to worry about the accessibility.",
+          "url": "https://vuetensils.stegosource.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Component Library", "Lightweight", "Accessible"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "759",
+          "name": "NuxtLabs UI",
+          "description": "Fully styled and customizable components for Nuxt.",
+          "url": "https://ui.nuxtlabs.com/getting-started",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "Nuxt", "Components", "Customizable"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "760",
+          "name": "shadcn-vue",
+          "description": "Vue port of shadcn-ui.",
+          "url": "https://www.shadcn-vue.com/",
+          "category": "vue-ui-libraries",
+          "tags": ["Vue", "shadcn", "Components", "UI Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "761",
+          "name": "Material Angular",
+          "description": "UI library for Angular based on Material design.",
+          "url": "https://material.angular.io/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Material Design", "UI Library", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "762",
+          "name": "NG Bootstrap",
+          "description": "UI library for Angular based on the Bootstrap framework.",
+          "url": "https://ng-bootstrap.github.io/#/home",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Bootstrap", "UI Library", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "763",
+          "name": "PrimeNG",
+          "description": "Powerful UI component library for Angular.",
+          "url": "https://www.primefaces.org/primeng/#/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Component Library", "PrimeNG"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "764",
+          "name": "Onsen Angular",
+          "description": "Hybrid mobile and PWA UI library for Angular and Onsen UI.",
+          "url": "https://onsen.io/angular2/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Mobile", "PWA", "Onsen UI"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "765",
+          "name": "NG Lightning",
+          "description": "Native Angular components & directives for Lightning Design System.",
+          "url": "https://ng-lightning.github.io/ng-lightning/#/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Lightning Design System", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "766",
+          "name": "NG Semantic",
+          "description": "UI library for Angular based on Semantic UI.",
+          "url": "https://github.com/vladotesanovic/ngSemantic",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Semantic UI", "UI Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "767",
+          "name": "Nebular",
+          "description": "Customizable UI Kit, Auth & Security for Angular.",
+          "url": "https://akveo.github.io/nebular/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "UI Kit", "Auth", "Security"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "768",
+          "name": "Alyle UI",
+          "description": "Minimal components set for Angular.",
+          "url": "https://alyle.io/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Minimal", "Components"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "769",
+          "name": "NGX Bootstrap",
+          "description": "Another UI library for Angular based on the Bootstrap framework.",
+          "url": "https://valor-software.com/ngx-bootstrap/#/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Bootstrap", "UI Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "770",
+          "name": "NG Zorro",
+          "description": "UI library for Angular based on Ant Design.",
+          "url": "https://ng.ant.design/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Ant Design", "UI Library"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "771",
+          "name": "Pagination for datatables",
+          "description": "npm library for pagination.",
+          "url": "https://www.npmjs.com/package/ngx-pagination",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Pagination", "Datatables", "npm"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "772",
+          "name": "Multi select dropdown",
+          "description": "For multi select drop-dowm in forms.",
+          "url": "https://www.npmjs.com/package/ng-multiselect-dropdown",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Dropdown", "Forms", "Multi-select"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "773",
+          "name": "NG Particles",
+          "description": "A lightweight Angular component for creating particles.",
+          "url": "https://particles.matteobruni.it/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Particles", "Animation", "Component"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "774",
+          "name": "Covalent UI",
+          "description": "Angular UI Platform focused on solving common enterprise needs.",
+          "url": "https://teradata.github.io/covalent/v3/#/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "UI Platform", "Enterprise"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "775",
+          "name": "Clarity",
+          "description": "CSS based Angular UI framework developed by VMware group.",
+          "url": "https://clarity.design/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "UI Framework", "VMware", "CSS"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "776",
+          "name": "Taiga UI",
+          "description": "Taiga UI is fully-treeshakable Angular UI Kit consisting of multiple base libraries and several add-ons.",
+          "url": "https://taiga-ui.dev/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "UI Kit", "Treeshakable"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "777",
+          "name": "ngx-admin",
+          "description": "Admin template based on Angular 10+ and Nebular.",
+          "url": "https://akveo.github.io/ngx-admin/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Admin Template", "Dashboard", "Nebular"],
+          "featured": false,
+          "free": true
+        },
+        {
+          "id": "778",
+          "name": "spartan",
+          "description": "Cutting-edge tools powering Angular full-stack development.",
+          "url": "https://www.spartan.ng/",
+          "category": "angular-ui-libraries",
+          "tags": ["Angular", "Full-stack", "Tools", "Development"],
+          "featured": false,
+          "free": true
+        }, 
+        
+          {
+            "id": "779",
+            "name": "Pexels",
+            "description": "Largest library of free to use videos, donated by the community.",
+            "url": "https://www.pexels.com/videos",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Footage", "Free", "Community"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "780",
+            "name": "Pixabay",
+            "description": "Large library of free to use videos, donated by the community similar to Pexels.",
+            "url": "https://www.pixabay.com/videos",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Footage", "Free", "Community"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "781",
+            "name": "Coverr.co",
+            "description": "Beautiful free stock video footage.",
+            "url": "https://coverr.co/",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Footage", "Free"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "782",
+            "name": "Videezy",
+            "description": "Free HD stock footage & 4K videos.",
+            "url": "https://www.videezy.com/",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "HD", "4K", "Footage"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "783",
+            "name": "Mix Kit",
+            "description": "Stock video clips & music.",
+            "url": "https://mixkit.co/",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Music", "Clips"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "784",
+            "name": "Life Of Vids",
+            "description": "Free video clips and loops.",
+            "url": "https://www.lifeofvids.com/",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Clips", "Loops"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "785",
+            "name": "Videvo",
+            "description": "Free and premium stock videos.",
+            "url": "https://www.videvo.net/stock-video-footage/",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Footage", "Premium"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "786",
+            "name": "Loopvidz",
+            "description": "Free To Use Cinema graphs Created With VIMAGE App.",
+            "url": "http://stock.loopvidz.com/",
+            "category": "stock-videos",
+            "tags": ["Cinemagraphs", "Loops", "Stock Videos"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "787",
+            "name": "SplitShire",
+            "description": "Beautiful & exclusive free stock videos & photos.",
+            "url": "https://www.splitshire.com/",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Stock Photos", "Free"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "788",
+            "name": "Free-Stock-Video",
+            "description": "Free Footage Stock Videos.",
+            "url": "https://free-stock.video",
+            "category": "stock-videos",
+            "tags": ["Stock Videos", "Footage", "Free"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "789",
+            "name": "YouTube Studio Audio Library",
+            "description": "Royalty-free audio library for downloadable music and sound effects. Cleared for YouTube monetization.",
+            "url": "https://www.youtube.com/audiolibrary",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Sound Effects", "Royalty Free", "YouTube"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "790",
+            "name": "Free Stock Music",
+            "description": "Royalty free stock music for YouTube videos, podcasts, etc.",
+            "url": "https://www.free-stock-music.com/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Royalty Free", "Podcast", "YouTube"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "791",
+            "name": "Bensound",
+            "description": "Download Royalty Free Music for free and use it in your project.",
+            "url": "https://www.bensound.com/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Royalty Free", "Free"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "792",
+            "name": "Mixkit",
+            "description": "Free music for your projects.",
+            "url": "https://mixkit.co/free-stock-music/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Free", "Projects"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "793",
+            "name": "Freesound",
+            "description": "Free stock music and sounds.",
+            "url": "https://freesound.org/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Sound Effects", "Free"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "794",
+            "name": "Free Music Archive",
+            "description": "Collaborative database of creative-commons licensed sound for musicians and sound lovers.",
+            "url": "https://freemusicarchive.org/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Creative Commons", "Audio"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "795",
+            "name": "Musopen",
+            "description": "An online copyright free classical music library.",
+            "url": "https://musopen.org/music/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Classical", "Copyright Free"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "796",
+            "name": "Pixabay",
+            "description": "Free music downloads for your project like Youtube videos, Music, Vlog, Film, Podcast etc.",
+            "url": "https://pixabay.com/music/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Free", "YouTube", "Vlog", "Podcast"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "797",
+            "name": "Unminus",
+            "description": "Free Premium Music for Your Projects 🎁 Royalty Free. Cleared for YouTube.",
+            "url": "https://www.unminus.com/",
+            "category": "stock-music-sound-effects",
+            "tags": ["Stock Music", "Premium", "Royalty Free", "YouTube"],
+            "featured": false,
+            "free": true
+          }, 
+          
+          
+          {
+            "id": "798",
+            "name": "Gimp",
+            "description": "Free & open source image editor similar to Photoshop.",
+            "url": "https://www.gimp.org/",
+            "category": "design-software",
+            "tags": ["Image Editor", "Open Source", "Photoshop Alternative", "Graphics"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "799",
+            "name": "Gravit Designer",
+            "description": "Free full-featured vector graphic design app that works on ALL platforms.",
+            "url": "https://www.designer.io/en/",
+            "category": "design-software",
+            "tags": ["Vector", "Graphic Design", "Cross-Platform", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "800",
+            "name": "Blender",
+            "description": "Open source, free animation, 3D modeling, etc.",
+            "url": "https://www.blender.org/download/",
+            "category": "design-software",
+            "tags": ["3D Modeling", "Animation", "VFX", "Open Source"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "801",
+            "name": "Raw Therapee",
+            "description": "Cross-platform raw image processing program.",
+            "url": "https://rawtherapee.com/",
+            "category": "design-software",
+            "tags": ["RAW Image", "Photo Processing", "Photography"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "802",
+            "name": "Be Funky",
+            "description": "Online design program.",
+            "url": "https://www.befunky.com/features/graphic-designer/",
+            "category": "design-software",
+            "tags": ["Online Editor", "Graphic Design", "Photo Editor"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "803",
+            "name": "Krita",
+            "description": "Sketching and painting program designed for digital artists.",
+            "url": "https://krita.org/en/download/krita-desktop/",
+            "category": "design-software",
+            "tags": ["Digital Painting", "Sketching", "Artists", "Open Source"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "804",
+            "name": "Pencil Project",
+            "description": "GUI prototyping software.",
+            "url": "https://pencil.evolus.vn/",
+            "category": "design-software",
+            "tags": ["GUI", "Prototyping", "Wireframing", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "805",
+            "name": "Inkscape",
+            "description": "Powerful free design tool.",
+            "url": "https://inkscape.org/",
+            "category": "design-software",
+            "tags": ["Vector", "Graphics", "Design Tool", "Open Source"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "806",
+            "name": "Adobe XD",
+            "description": "Free design tool from Adobe.",
+            "url": "https://www.adobe.com/products/xd.html",
+            "category": "design-software",
+            "tags": ["UI Design", "UX", "Prototyping", "Adobe"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "807",
+            "name": "Shapes.so",
+            "description": "Icons that can be used as code in your projects.",
+            "url": "https://shape.so/pricing",
+            "category": "design-software",
+            "tags": ["Icons", "Code", "SVG", "Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "808",
+            "name": "Lunacy",
+            "description": "Sketch for Windows.",
+            "url": "https://icons8.com/lunacy",
+            "category": "design-software",
+            "tags": ["Sketch", "Windows", "UI Design", "Vector"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "809",
+            "name": "InVision Studio",
+            "description": "Free screen designing tool from InVision.",
+            "url": "https://www.invisionapp.com/studio",
+            "category": "design-software",
+            "tags": ["Screen Design", "Prototyping", "InVision", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "810",
+            "name": "Darktable",
+            "description": "Free & Open source photography workflow application and raw developer.",
+            "url": "https://www.darktable.org/",
+            "category": "design-software",
+            "tags": ["Photography", "RAW Developer", "Open Source", "Photo Editor"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "811",
+            "name": "Inpixio photo Editor",
+            "description": "Free Photo Editor: For windows only.",
+            "url": "https://www.inpixio.com/free-photo-editor",
+            "category": "design-software",
+            "tags": ["Photo Editor", "Windows"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "812",
+            "name": "Colorpicker",
+            "description": "Open Source colors software: Retrieve, manipulate and store your colors easily!",
+            "url": "https://colorpicker.fr",
+            "category": "design-software",
+            "tags": ["Color", "Picker", "Open Source", "Developer"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "813",
+            "name": "Google Web Designer",
+            "description": "Create engaging, interactive HTML5-based designs and motion graphics that can run on any device.",
+            "url": "https://webdesigner.withgoogle.com/",
+            "category": "design-software",
+            "tags": ["HTML5", "Motion Graphics", "Google", "Web Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "814",
+            "name": "Origami Studio",
+            "description": "Interactive interface design tool created by Facebook: For mac only.",
+            "url": "https://origami.design",
+            "category": "design-software",
+            "tags": ["UI Design", "Interactive", "Prototyping", "Facebook", "macOS"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "815",
+            "name": "Websitevice",
+            "description": "A curated gallery of professional website designs to inspire developers and designers seeking creative ideas and best practices.",
+            "url": "https://websitevice.com/",
+            "category": "design-inspiration",
+            "tags": ["Inspiration", "Website Design", "Gallery", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "816",
+            "name": "CSS Zen Garden",
+            "description": "Demonstrating the power of CSS, over 200 CSS-only interpretations of the same HTML file.",
+            "url": "http://csszengarden.com/",
+            "category": "design-inspiration",
+            "tags": ["CSS", "Inspiration", "Showcase", "Web Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "817",
+            "name": "Behance",
+            "description": "Design projects featured by different creators.",
+            "url": "https://www.behance.net/",
+            "category": "design-inspiration",
+            "tags": ["Inspiration", "Portfolio", "Showcase", "Graphic Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "818",
+            "name": "Dribbble",
+            "description": "Design projects featured by different creators.",
+            "url": "https://dribbble.com/",
+            "category": "design-inspiration",
+            "tags": ["Inspiration", "UI", "UX", "Showcase", "Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "819",
+            "name": "Landingfolio",
+            "description": "Landingfolio features the best landing page inspiration, templates, resources and examples on the web.",
+            "url": "https://landingfolio.com/",
+            "category": "design-inspiration",
+            "tags": ["Landing Page", "Inspiration", "Templates", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "820",
+            "name": "Foxyapps",
+            "description": "Design inspiration from the best mobile app designs.",
+            "url": "https://foxyapps.co/",
+            "category": "design-inspiration",
+            "tags": ["Mobile Design", "App Design", "Inspiration", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "821",
+            "name": "Httpster",
+            "description": "Showcases websites made by people from all over the world.",
+            "url": "https://httpster.net/2020/apr/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Inspiration", "Gallery", "Showcase"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "822",
+            "name": "Land Book",
+            "description": "Displays a large collection of websites to help find inspiration.",
+            "url": "https://land-book.com/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Inspiration", "Gallery", "Portfolio"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "823",
+            "name": "Frontend Mentor",
+            "description": "Real-world UI Challenges using HTML, CSS and Javascript.",
+            "url": "https://www.frontendmentor.io/",
+            "category": "design-inspiration",
+            "tags": ["UI", "Challenges", "Frontend", "Practice"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "824",
+            "name": "Awwwards",
+            "description": "A website that rate and collects the best websites in the world in UI.",
+            "url": "https://www.awwwards.com/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Awards", "Inspiration", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "825",
+            "name": "Codrops",
+            "description": "A website that collects the best UI ideas and patterns and make tutorials of it.",
+            "url": "https://tympanus.net/codrops/",
+            "category": "design-inspiration",
+            "tags": ["UI", "Patterns", "Tutorials", "Web Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "826",
+            "name": "SaaS Landing Page",
+            "description": "Discover the best landing page examples created by top-class SaaS companies.",
+            "url": "https://saaslandingpage.com/",
+            "category": "design-inspiration",
+            "tags": ["SaaS", "Landing Page", "Inspiration", "Examples"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "827",
+            "name": "Saaspages.xyz",
+            "description": "A collection of the best landing pages with a focus on copywriting and design.",
+            "url": "https://saaspages.xyz",
+            "category": "design-inspiration",
+            "tags": ["SaaS", "Landing Page", "Copywriting", "Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "828",
+            "name": "Screenlane",
+            "description": "Screenlane is a website and newsletter that features the latest web and mobile design inspiration.",
+            "url": "https://screenlane.com",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Mobile Design", "Inspiration", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "829",
+            "name": "lapa ninja",
+            "description": "Best landing page inspiration.",
+            "url": "https://www.lapa.ninja/",
+            "category": "design-inspiration",
+            "tags": ["Landing Page", "Inspiration", "UI", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "830",
+            "name": "Freefrontend",
+            "description": "Free frontend design from css html and javascript. latest work some design part.",
+            "url": "https://freefrontend.com/",
+            "category": "design-inspiration",
+            "tags": ["Frontend", "CSS", "HTML", "JavaScript", "Snippets"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "831",
+            "name": "Webframe",
+            "description": "Discover and be inspired by beautiful webapp designs.",
+            "url": "https://webframe.xyz",
+            "category": "design-inspiration",
+            "tags": ["Web App", "Design", "Inspiration", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "832",
+            "name": "Collect UI",
+            "description": "Daily inspiration collected from daily ui archive and beyond. Handpicked, and updating daily.",
+            "url": "http://collectui.com/",
+            "category": "design-inspiration",
+            "tags": ["UI", "Inspiration", "Gallery", "Daily"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "833",
+            "name": "Graphic Burger",
+            "description": "A site offering a free and paid icons, mock-ups, UI-Kits, text effect and backgrounds.",
+            "url": "https://graphicburger.com/",
+            "category": "design-inspiration",
+            "tags": ["Icons", "Mockups", "UI Kits", "Freebies"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "834",
+            "name": "Really Good Emails",
+            "description": "A site offering users a ton of company e-mails from customer service to marketing.",
+            "url": "https://reallygoodemails.com/",
+            "category": "design-inspiration",
+            "tags": ["Email Design", "Inspiration", "Marketing", "Templates"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "835",
+            "name": "Free Design Resource",
+            "description": "A site offering fonts, mockups, templates graphics and ui kits.",
+            "url": "https://freedesignresources.net/",
+            "category": "design-inspiration",
+            "tags": ["Fonts", "Mockups", "Templates", "Freebies"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "836",
+            "name": "Site Inspire",
+            "description": "siteInspire is a showcase of the finest web and interactive design.",
+            "url": "https://www.siteinspire.com/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Inspiration", "Interactive", "Showcase"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "837",
+            "name": "Web Design Inspiration",
+            "description": "A site for web design inspiration, updated daily.",
+            "url": "https://www.webdesign-inspiration.com/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Inspiration", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "838",
+            "name": "NavNav",
+            "description": "Responsive navigation examples.",
+            "url": "https://navnav.co/",
+            "category": "design-inspiration",
+            "tags": ["Navigation", "Responsive", "UI Patterns", "Examples"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "839",
+            "name": "Calltoidea",
+            "description": "Collection of different web Components for inspiration.",
+            "url": "https://www.calltoidea.com/",
+            "category": "design-inspiration",
+            "tags": ["Components", "UI", "Inspiration", "Web Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "840",
+            "name": "Mulzli Search",
+            "description": "Search engine for design inspiration.",
+            "url": "https://search.muz.li",
+            "category": "design-inspiration",
+            "tags": ["Search Engine", "Design", "Inspiration", "Muzli"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "841",
+            "name": "DeviantArt",
+            "description": "Access to 370 million pieces of art for inspiration.",
+            "url": "https://www.deviantart.com/",
+            "category": "design-inspiration",
+            "tags": ["Art", "Inspiration", "Community", "Digital Art"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "842",
+            "name": "Design your way",
+            "description": "Collection of different Web and Mobile Designs.",
+            "url": "https://www.designyourway.net/blog/web-and-mobile-design/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Mobile Design", "Inspiration", "Collection"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "843",
+            "name": "SiteSee",
+            "description": "A curated gallery of beautiful and modern websites.",
+            "url": "https://sitesee.co/",
+            "category": "design-inspiration",
+            "tags": ["Gallery", "Web Design", "Modern", "Inspiration"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "844",
+            "name": "UI Garage",
+            "description": "Daily handpicked UI inspiration & patterns.",
+            "url": "https://uigarage.net/",
+            "category": "design-inspiration",
+            "tags": ["UI", "Inspiration", "Patterns", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "845",
+            "name": "ecomm.design",
+            "description": "eCommerce Website Design Gallery & Tech Inspiration.",
+            "url": "https://ecomm.design/",
+            "category": "design-inspiration",
+            "tags": ["eCommerce", "Web Design", "Inspiration", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "846",
+            "name": "Design Nominees",
+            "description": "A showcase of awarding and showcasing the best websites, apps and Games.",
+            "url": "https://www.designnominees.com/",
+            "category": "design-inspiration",
+            "tags": ["Showcase", "Awards", "Web Design", "App Design"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "847",
+            "name": "Design Vault",
+            "description": "A library of screenshots and patterns from real world digital products.",
+            "url": "https://designvault.io/",
+            "category": "design-inspiration",
+            "tags": ["UI Patterns", "Screenshots", "Digital Products", "Library"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "848",
+            "name": "CSS buttons",
+            "description": "84 Beautiful CSS buttons examples.",
+            "url": "https://getcssscan.com/css-buttons-examples",
+            "category": "design-inspiration",
+            "tags": ["CSS", "Buttons", "Examples", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "849",
+            "name": "CSS box-shadow",
+            "description": "91 Beautiful CSS box-shadow examples.",
+            "url": "https://getcssscan.com/css-box-shadow-examples",
+            "category": "design-inspiration",
+            "tags": ["CSS", "Box Shadow", "Examples", "UI"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "850",
+            "name": "Super Designer",
+            "description": "Design tools that give you super powers.",
+            "url": "https://superdesigner.co",
+            "category": "design-inspiration",
+            "tags": ["Design Tools", "Generators", "Color", "Gradient"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "851",
+            "name": "Landings",
+            "description": "Find the best landing pages for your design inspiration based on your preference.",
+            "url": "https://landings.dev",
+            "category": "design-inspiration",
+            "tags": ["Landing Page", "Inspiration", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "852",
+            "name": "Page Collective",
+            "description": "Page Collective is part of a network of design inspiration websites.",
+            "url": "https://pagecollective.com/",
+            "category": "design-inspiration",
+            "tags": ["Inspiration", "Web Design", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "853",
+            "name": "Curated",
+            "description": "Unleash your creativity with out-of-this-world web design inspiration from across the web.",
+            "url": "https://www.curated.design/",
+            "category": "design-inspiration",
+            "tags": ["Web Design", "Inspiration", "Curated"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "854",
+            "name": "Maxibestofone",
+            "description": "Daily feed of websites & fonts inspiration.",
+            "url": "https://maxibestof.one/",
+            "category": "design-inspiration",
+            "tags": ["Inspiration", "Websites", "Fonts", "Daily"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "855",
+            "name": "Bento Grids",
+            "description": "Bento Grids is a curated collection of tiles-based layouts that were popularized by Apple.",
+            "url": "https://bentogrids.com/",
+            "category": "design-inspiration",
+            "tags": ["Bento", "Layout", "Grids", "Inspiration"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "856",
+            "name": "Landing Gallery",
+            "description": "Home of the best landing page design inspiration.",
+            "url": "https://www.landing.gallery/",
+            "category": "design-inspiration",
+            "tags": ["Landing Page", "Inspiration", "Gallery"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "857",
+            "name": "a-fresh.website",
+            "description": "Hand—picked website and component inspiration library.",
+            "url": "https://a-fresh.website",
+            "category": "design-inspiration",
+            "tags": ["Website", "Component", "Inspiration", "Library"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "858",
+            "name": "bestwebdesigntools",
+            "description": "Discover latest design tools, agencies and landing pages templates across web.",
+            "url": "https://www.bestwebdesigntools.com/",
+            "category": "design-inspiration",
+            "tags": ["Design Tools", "Templates", "Agencies"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "859",
+            "name": "App Motion",
+            "description": "Explore the best, hand-picked app motion design.",
+            "url": "https://appmotion.design/",
+            "category": "design-inspiration",
+            "tags": ["App Design", "Motion Design", "Animation", "Inspiration"],
+            "featured": false,
+            "free": true
+          },
+          {
+            "id": "860",
+            "name": "Uiland Design",
+            "description": "Home of the best mobile ui inspirations from top companies in the world.",
+            "url": "https://uiland.design/",
+            "category": "design-inspiration",
+            "tags": ["Mobile UI", "Inspiration", "App Design"],
+            "featured": false,
+            "free": true
+          }
 ];
