@@ -7,7 +7,7 @@ const baseCategoriesData = [
     description: 'Browse all design resources',
     icon: Layers,
     color: 'purple',
-    count: 265 // Sum of all resources
+    count: 699 // Updated total count
   },
   {
     id: 'ui-graphics',
@@ -15,7 +15,7 @@ const baseCategoriesData = [
     description: 'Modern UI components and design elements',
     icon: Palette,
     color: 'blue',
-    count: 69
+    count: 45
   },
   {
     id: 'fonts',
@@ -23,7 +23,7 @@ const baseCategoriesData = [
     description: 'Typography resources and font libraries',
     icon: Type,
     color: 'purple',
-    count: 67
+    count: 35
   },
   {
     id: 'colors',
@@ -31,7 +31,7 @@ const baseCategoriesData = [
     description: 'Color palettes and design tools',
     icon: Palette,
     color: 'pink',
-    count: 61
+    count: 42
   },
   {
     id: 'icons',
@@ -39,7 +39,7 @@ const baseCategoriesData = [
     description: 'Icon sets and vector graphics',
     icon: Star,
     color: 'yellow',
-    count: 68
+    count: 38
   },
   {
     id: 'logos',
@@ -47,196 +47,232 @@ const baseCategoriesData = [
     description: 'Logo resources and brand assets',
     icon: Shapes,
     color: 'green',
-    count: 65
+    count: 25
   },
   {
     id: 'stock-photos',
     name: 'Stock Photos',
     description: 'Free and premium photography',
     icon: Camera,
-    color: 'indigo'
+    color: 'indigo',
+    count: 28
   },
   {
     id: 'stock-videos',
     name: 'Stock Videos',
     description: 'Video footage and motion graphics',
     icon: Video,
-    color: 'red'
+    color: 'red',
+    count: 15
   },
   {
-    id: 'stock-music',
-    name: 'Stock Music',
+    id: 'stock-music-sound-effects',
+    name: 'Stock Music & Sound Effects',
     description: 'Audio resources and sound effects',
     icon: Music,
-    color: 'orange'
+    color: 'orange',
+    count: 8
   },
   {
     id: 'vectors',
     name: 'Vectors & Clip Art',
     description: 'Vector graphics and illustrations',
     icon: Shapes,
-    color: 'teal'
+    color: 'teal',
+    count: 32
   },
   {
     id: 'mockups',
     name: 'Mockups',
     description: 'Device and product mockups',
     icon: Smartphone,
-    color: 'cyan'
+    color: 'cyan',
+    count: 18
   },
   {
     id: 'templates',
     name: 'HTML & CSS Templates',
     description: 'Website templates and themes',
     icon: Layout,
-    color: 'lime'
+    color: 'lime',
+    count: 22
   },
   {
     id: 'css-frameworks',
     name: 'CSS Frameworks',
     description: 'UI frameworks and component libraries',
     icon: Code,
-    color: 'emerald'
+    color: 'emerald',
+    count: 25
   },
   {
     id: 'animations',
     name: 'CSS Animations',
     description: 'Animation libraries and effects',
     icon: Zap,
-    color: 'violet'
+    color: 'violet',
+    count: 12
   },
   {
     id: 'ui-components',
     name: 'UI Components',
     description: 'Reusable interface components',
     icon: Layout,
-    color: 'rose'
+    color: 'rose',
+    count: 15
   },
   {
     id: 'design-tools',
     name: 'Online Design Tools',
     description: 'Web-based design applications',
     icon: Brush,
-    color: 'amber'
+    color: 'amber',
+    count: 28
   },
   {
     id: 'design-software',
     name: 'Design Software',
     description: 'Downloadable design applications',
     icon: Monitor,
-    color: 'slate'
+    color: 'slate',
+    count: 8
   },
   {
-    id: 'inspiration',
+    id: 'design-inspiration',
     name: 'Design Inspiration',
     description: 'Galleries and showcase websites',
     icon: Lightbulb,
-    color: 'orange'
+    color: 'orange',
+    count: 12
   },
   {
     id: 'image-tools',
     name: 'Image Tools',
     description: 'Image editing and optimization tools',
     icon: Compress,
-    color: 'blue'
+    color: 'blue',
+    count: 35
+  },
+
+  {
+    id: 'chrome-extensions',
+    name: 'Chrome Extensions',
+    description: 'Chrome browser extensions for developers',
+    icon: Chrome,
+    color: 'blue',
+    count: 45
   },
   {
-    id: 'extensions',
-    name: 'Browser Extensions',
-    description: 'Useful browser extensions for designers',
+    id: 'firefox-extensions',
+    name: 'Firefox Extensions',
+    description: 'Firefox browser extensions for developers',
     icon: Chrome,
-    color: 'green'
+    color: 'orange',
+    count: 12
   },
   {
     id: 'ai-tools',
     name: 'AI Design Tools',
     description: 'AI-powered design generators',
     icon: Bot,
-    color: 'purple'
+    color: 'purple',
+    count: 15
   },
   {
     id: 'icon-fonts',
     name: 'Icon Fonts',
     description: 'Icon font libraries and sets',
     icon: Hash,
-    color: 'indigo'
+    color: 'indigo',
+    count: 8
   },
   {
     id: 'css-animations',
     name: 'CSS Animations',
     description: 'CSS animation libraries and effects',
     icon: Zap,
-    color: 'purple'
+    color: 'purple',
+    count: 12
   },
   {
     id: 'js-animations',
     name: 'JavaScript Animations',
     description: 'JavaScript animation libraries',
     icon: Code,
-    color: 'yellow'
+    color: 'yellow',
+    count: 8
   },
   {
     id: 'audio',
     name: 'Audio Resources',
     description: 'Stock music and sound effects',
     icon: Music,
-    color: 'pink'
+    color: 'pink',
+    count: 8
   },
   {
     id: 'react-ui',
     name: 'React UI Libraries',
     description: 'React component libraries',
     icon: Layers,
-    color: 'blue'
+    color: 'blue',
+    count: 12
   },
   {
-    id: 'vue-ui',
-    name: 'Vue UI Libraries',
+    id: 'vue-ui-libraries',
+    name: 'Browser Extensions',
     description: 'Vue.js component libraries',
     icon: Layers,
-    color: 'green'
+    color: 'green',
+    count: 8
   },
   {
-    id: 'angular-ui',
+    id: 'angular-ui-libraries',
     name: 'Angular UI Libraries',
     description: 'Angular component libraries',
     icon: Layers,
-    color: 'red'
+    color: 'red',
+    count: 6
   },
   {
-    id: 'svelte-ui',
+    id: 'svelte-ui-libraries',
     name: 'Svelte UI Libraries',
     description: 'Svelte component libraries',
     icon: Layers,
-    color: 'orange'
+    color: 'orange',
+    count: 4
   },
   {
-    id: 'react-native-ui',
+    id: 'react-native-ui-libraries',
     name: 'React Native UI',
     description: 'React Native component libraries',
     icon: Smartphone,
-    color: 'cyan'
+    color: 'cyan',
+    count: 5
   },
   {
     id: 'favicons',
     name: 'Favicons',
     description: 'Favicon generators and resources',
     icon: Star,
-    color: 'amber'
-  },
-  {
-    id: 'others',
-    name: 'Others',
-    description: 'Miscellaneous design resources',
-    icon: MoreHorizontal,
-    color: 'gray'
+    color: 'amber',
+    count: 8
   },
   {
     id: 'charts',
     name: 'Charts & Data Visualization',
     description: 'Chart libraries and data visualization tools',
     icon: Layers,
-    color: 'emerald'
+    color: 'emerald',
+    count: 15
+  },
+  {
+    id: 'others',
+    name: 'Others',
+    description: 'Miscellaneous design resources',
+    icon: MoreHorizontal,
+    color: 'gray',
+    count: 85
   }
 ];
 
