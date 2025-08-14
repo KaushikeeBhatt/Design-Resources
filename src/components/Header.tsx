@@ -11,6 +11,7 @@ interface HeaderProps {
 export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isBookmarkPanelOpen, setIsBookmarkPanelOpen] = React.useState(false);
+  const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const [stats, setStats] = React.useState({ totalBookmarks: 0 });
 
   // Update stats when component mounts and when bookmark panel opens
@@ -21,6 +22,22 @@ export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
   const handleBookmarkPanelToggle = () => {
     setStats(getBookmarkStats()); // Refresh stats
     setIsBookmarkPanelOpen(!isBookmarkPanelOpen);
+  };
+
+  const handleSearchSubmit = () => {
+    // Scroll to resources section when search is submitted
+    const resourcesSection = document.getElementById('resources-section');
+    if (resourcesSection) {
+      resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    // Close mobile search if open
+    setIsMobileSearchOpen(false);
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      handleSearchSubmit();
+    }
   };
 
   return (
@@ -37,9 +54,9 @@ export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
             </div>
           </div>
 
-          {/* Search Bar - Hidden on very small screens, shown on sm+ */}
+          {/* Search Bar - Show on md+ screens (768px+) instead of sm+ */}
           {onSearchChange && (
-            <div className="hidden sm:flex flex-1 max-w-md mx-4 lg:mx-8">
+            <div className="hidden md:flex flex-1 max-w-md mx-4 lg:mx-8">
               <div className="relative w-full">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
                 <input
@@ -47,6 +64,7 @@ export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
                   placeholder="Search resources..."
                   value={searchQuery}
                   onChange={(e) => onSearchChange(e.target.value)}
+                  onKeyPress={handleKeyPress}
                   className="w-full pl-10 pr-10 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent shadow-sm text-sm"
                 />
                 {searchQuery && (
@@ -63,11 +81,11 @@ export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
 
           {/* Right side buttons */}
           <div className="flex items-center gap-2 sm:gap-4">
-            {/* Mobile Search Button */}
+            {/* Mobile Search Button - Show on screens smaller than md (768px) */}
             {onSearchChange && (
               <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="sm:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200"
+                onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}
+                className="md:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200"
                 title="Search"
               >
                 <Search className="w-5 h-5" />
@@ -93,9 +111,9 @@ export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
           </div>
         </div>
 
-        {/* Mobile Search Bar - Expandable */}
-        {onSearchChange && isMenuOpen && (
-          <div className="sm:hidden pb-4 border-t border-white/20 mt-2 pt-4">
+        {/* Mobile Search Bar - Show when mobile search is toggled */}
+        {onSearchChange && isMobileSearchOpen && (
+          <div className="md:hidden pb-4 border-t border-white/20 mt-2 pt-4">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <input
@@ -103,7 +121,9 @@ export function Header({ searchQuery = '', onSearchChange }: HeaderProps) {
                 placeholder="Search resources, tools, and inspiration..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
+                onKeyPress={handleKeyPress}
                 className="w-full pl-10 pr-10 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent shadow-sm"
+                autoFocus
               />
               {searchQuery && (
                 <button

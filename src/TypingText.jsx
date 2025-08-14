@@ -35,7 +35,8 @@ function TypingText({ texts, speed = 50, eraseSpeed = 30, delay = 1500 }) {
   }, [i, isDeleting, textIndex, texts, speed, eraseSpeed, delay]);
 
   return (
-    <span>
+    
+    <span style={{ color : "black" }}>
       {displayed}
       <span className="animate-pulse">|</span>
     </span>

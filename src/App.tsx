@@ -1,5 +1,5 @@
-import React, { useState, useMemo, useCallback } from 'react';
-import { Search, Star, Filter, Grid, Palette, Code, Zap, Sparkles, ArrowRight, Layers, ChevronDown } from 'lucide-react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import { Search, Star, Filter, Grid, Palette, Code, Zap, Sparkles, ArrowRight, Layers, ChevronDown, X } from 'lucide-react';
 import { Header } from './components/Header';
 import { CategoryCard } from './components/CategoryCard';
 import { MemoizedResourceCard } from './components/MemoizedResourceCard';
@@ -20,6 +20,7 @@ function App() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
   const [showMobileCategoryDropdown, setShowMobileCategoryDropdown] = useState(false);
+  const [showTabletFilterBar, setShowTabletFilterBar] = useState(false);
 
   // Memoized search handler to prevent unnecessary re-renders
   const handleSearchChange = useCallback((query: string) => {
@@ -85,13 +86,25 @@ function App() {
     setShowMobileCategoryDropdown(false);
   }, []);
 
+  // Check if screen size is in tablet range (780px-1022px)
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const width = window.innerWidth;
+      setShowTabletFilterBar(width >= 780 && width <= 1022);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Background />
       <FloatingShapes />
       <Header searchQuery={searchQuery} onSearchChange={handleSearchChange} />
       
-      {/* Floating Mobile Category Switcher */}
+      {/* Floating Mobile Category Switcher - only for <768px */}
       <div className="md:hidden fixed bottom-4 left-4 right-4 z-40">
         <div className="relative">
           <button
@@ -152,6 +165,70 @@ function App() {
           )}
         </div>
       </div>
+
+      {/* Bottom Filter Bar for 780px-1022px screens */}
+      {showTabletFilterBar && (
+        <div className="fixed bottom-4 left-4 right-4 z-40">
+          <div className="relative">
+            <button
+              onClick={() => setShowMobileCategoryDropdown(!showMobileCategoryDropdown)}
+              className="w-full flex items-center justify-between px-4 py-3 bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl shadow-lg text-gray-900 font-medium"
+            >
+              <div className="flex items-center gap-2">
+                <Filter className="w-4 h-4 text-blue-600" />
+                <span className="text-sm">
+                  {selectedCategory === 'all' ? 'All Resources' : 
+                   categoriesWithDynamicCounts.find(c => c.id === selectedCategory)?.name || 'Category'}
+                </span>
+                <span className="text-xs text-gray-500">
+                  ({filteredResources.length})
+                </span>
+              </div>
+              <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${showMobileCategoryDropdown ? 'rotate-180' : ''}`} />
+            </button>
+            
+            {showMobileCategoryDropdown && (
+              <>
+                {/* Backdrop */}
+                <div 
+                  className="fixed inset-0 bg-black/20 z-30"
+                  onClick={() => setShowMobileCategoryDropdown(false)}
+                />
+                
+                {/* Dropdown */}
+                <div className="absolute bottom-full left-0 right-0 mb-2 bg-white border border-gray-200 rounded-xl shadow-xl max-h-64 overflow-y-auto z-50">
+                  {categoriesWithDynamicCounts.map((category) => (
+                    <button
+                      key={category.id}
+                      onClick={() => {
+                        setSelectedCategory(category.id);
+                        setShowMobileCategoryDropdown(false);
+                        const resourcesSection = document.getElementById('resources-section');
+                        if (resourcesSection) {
+                          resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                      }}
+                      className={`w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors ${
+                        selectedCategory === category.id ? 'bg-blue-50 text-blue-600' : 'text-gray-900'
+                      } ${category.id === categoriesWithDynamicCounts[0].id ? 'rounded-t-xl' : ''} ${
+                        category.id === categoriesWithDynamicCounts[categoriesWithDynamicCounts.length - 1].id ? 'rounded-b-xl' : ''
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className={`w-2 h-2 rounded-full ${selectedCategory === category.id ? 'bg-blue-600' : 'bg-gray-300'}`} />
+                        <span className="font-medium">{category.name}</span>
+                      </div>
+                      <span className="text-sm text-gray-500">
+                        {category.count}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="relative overflow-hidden text-white">
@@ -258,8 +335,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8">
             <div className="flex flex-col lg:flex-row gap-8">
-              {/* Hide FilterSidebar on mobile - only show on lg+ screens */}
-              <div className="hidden lg:block">
+              {/* Show FilterSidebar only on desktop (lg+) */}
+              <div className="hidden lg:block xl:w-80 lg:w-72">
                 <FilterSidebar
                   categories={categoriesWithDynamicCounts}
                   selectedCategory={selectedCategory}
@@ -282,10 +359,58 @@ function App() {
                   </div>
                   
                   <div className="flex items-center gap-4">
-                    {/* Remove mobile filters button since FilterSidebar is hidden on mobile */}
+                    {/* Show filter toggle for mobile and iPad - covers all tablet dimensions */}
+                    <button
+                      onClick={() => setShowFilters(!showFilters)}
+                      className="xl:hidden flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 text-white hover:bg-white/20 transition-colors shadow-sm"
+                    >
+                      <Filter className="w-4 h-4" />
+                      <span className="text-sm font-medium">Filters</span>
+                    </button>
                     <ViewToggle viewMode={viewMode} onViewModeChange={setViewMode} />
                   </div>
                 </div>
+
+                {/* Mobile and iPad Filter Overlay - covers all dimensions below 1280px */}
+                {showFilters && (
+                  <div className="xl:hidden fixed inset-0 z-50 flex">
+                    {/* Backdrop - optimized for touch devices */}
+                    <div 
+                      className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+                      onClick={() => setShowFilters(false)}
+                      style={{ touchAction: 'manipulation' }}
+                    />
+                    
+                    {/* Filter Panel - responsive width for all devices */}
+                    <div className="relative bg-white w-80 sm:w-80 md:w-96 lg:w-96 max-w-[85vw] h-full overflow-y-auto shadow-2xl">
+                      <div className="p-6 pb-safe">
+                        <div className="flex items-center justify-between mb-6">
+                          <h3 className="text-lg font-semibold text-gray-900">Filter Resources</h3>
+                          <button
+                            onClick={() => setShowFilters(false)}
+                            className="p-3 hover:bg-gray-100 rounded-lg transition-colors"
+                            style={{ touchAction: 'manipulation' }}
+                            aria-label="Close filters"
+                          >
+                            <X className="w-5 h-5 text-gray-500" />
+                          </button>
+                        </div>
+                        
+                        {/* FilterSidebar component - same for all devices */}
+                        <FilterSidebar
+                          categories={categoriesWithDynamicCounts}
+                          selectedCategory={selectedCategory}
+                          onCategoryChange={(category) => {
+                            handleCategoryChange(category);
+                            setShowFilters(false);
+                          }}
+                          isVisible={true}
+                          onClose={() => setShowFilters(false)}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {filteredResources.length === 0 ? (
                   <div className="text-center py-16">
@@ -306,9 +431,9 @@ function App() {
                   </div>
                 ) : (
                   <>
-                    <div className={`grid gap-6 ${
+                    <div className={`grid gap-6 pb-20 ${
                       viewMode === 'grid' 
-                        ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
+                        ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3' 
                         : 'grid-cols-1'
                     }`}>
                       {visibleResources.map((resource) => (
