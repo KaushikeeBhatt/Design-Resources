@@ -17,7 +17,7 @@ export function SearchBar({ searchQuery, onSearchChange, className = '' }: Searc
           placeholder="Search resources, tools, and inspiration..."
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="w-full pl-12 pr-12 py-4 bg-white/30 backdrop-blur-sm border border-white/20 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent shadow-lg text-lg"
+          className="w-full pl-10 sm:pl-12 pr-10 sm:pr-12 py-3 sm:py-4 bg-white/30 backdrop-blur-sm border border-white/20 rounded-xl sm:rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent shadow-lg text-base sm:text-lg"
         />
         {searchQuery && (
           <button

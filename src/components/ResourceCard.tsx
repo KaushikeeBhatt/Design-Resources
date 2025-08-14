@@ -81,42 +81,44 @@ export function ResourceCard({ resource, viewMode }: ResourceCardProps) {
   if (viewMode === 'list') {
     
     return (
-      <div className="relative bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group">
+      <div className="relative bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group">
         <BackgroundSVG />
-        <div className="relative z-10 flex items-start justify-between">
-          <div className="flex-1 pr-6">
-            <div className="flex items-center gap-3 mb-3">
-              <h3 className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors leading-tight">
+        <div className="relative z-10 flex flex-col sm:flex-row items-start justify-between gap-4">
+          <div className="flex-1">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors leading-tight">
                 {resource.name}
               </h3>
-              {resource.featured && (
-                <div className="flex items-center gap-1.5 bg-gradient-to-r from-yellow-100 to-yellow-50 text-yellow-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-yellow-200 shadow-sm">
-                  <Star className="w-3.5 h-3.5 fill-current" />
-                  Featured
-                </div>
-              )}
-              {resource.free && (
-                <div className="bg-gradient-to-r from-green-100 to-green-50 text-green-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-green-200 shadow-sm">
-                  Free
-                </div>
-              )}
+              <div className="flex items-center gap-2">
+                {resource.featured && (
+                  <div className="flex items-center gap-1.5 bg-gradient-to-r from-yellow-100 to-yellow-50 text-yellow-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-semibold border border-yellow-200 shadow-sm">
+                    <Star className="w-3 sm:w-3.5 h-3 sm:h-3.5 fill-current" />
+                    Featured
+                  </div>
+                )}
+                {resource.free && (
+                  <div className="bg-gradient-to-r from-green-100 to-green-50 text-green-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-semibold border border-green-200 shadow-sm">
+                    Free
+                  </div>
+                )}
+              </div>
             </div>
             
-            <p className="text-gray-600 mb-4 line-clamp-2 leading-relaxed text-base">
+            <p className="text-gray-600 text-base mb-5 line-clamp-2 sm:line-clamp-3 leading-relaxed flex-grow">
               {resource.description}
             </p>
             
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-6">
               {resource.tags.slice(0, 3).map((tag) => (
                 <span
                   key={tag}
-                  className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-medium hover:from-gray-100 hover:to-gray-200 transition-all duration-200 border border-gray-200 shadow-sm"
+                  className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-sm font-medium hover:from-gray-100 hover:to-gray-200 transition-all duration-200 border border-gray-200 shadow-sm"
                 >
                   {tag}
                 </span>
               ))}
               {resource.tags.length > 3 && (
-                <span className="text-gray-500 text-sm font-medium self-center">+{resource.tags.length - 3} more</span>
+                <span className="text-gray-500 text-sm font-medium self-center">+{resource.tags.length - 3}</span>
               )}
             </div>
           </div>
@@ -152,75 +154,73 @@ export function ResourceCard({ resource, viewMode }: ResourceCardProps) {
   }
 
   return (
-     <div className="group relative bg-white border border-gray-200 rounded-2xl 
-                  p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 
-                  overflow-hidden flex flex-col justify-between h-full">
-        <BackgroundSVG />
-        <div className="relative z-10 flex flex-col h-full">
-          <div className="flex items-start justify-between mb-4">
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-3">
-                {resource.featured && (
-                  <div className="flex items-center gap-1.5 bg-gradient-to-r from-yellow-100 to-yellow-50 text-yellow-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-yellow-200 shadow-sm">
-                    <Star className="w-3.5 h-3.5 fill-current" />
-                    Featured
-                  </div>
-                )}
-                {resource.free && (
-                  <div className="bg-gradient-to-r from-green-100 to-green-50 text-green-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-green-200 shadow-sm">
-                    Free
-                  </div>
-                )}
-              </div>
-              
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors leading-tight">
-                {resource.name}
-              </h3>
+    <div className="group relative bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col justify-between h-full">
+      <BackgroundSVG />
+      <div className="relative z-10 flex flex-col h-full">
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex-1">
+            <div className="flex items-center gap-2 mb-3">
+              {resource.featured && (
+                <div className="flex items-center gap-1.5 bg-gradient-to-r from-yellow-100 to-yellow-50 text-yellow-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-semibold border border-yellow-200 shadow-sm">
+                  <Star className="w-3 sm:w-3.5 h-3 sm:h-3.5 fill-current" />
+                  Featured
+                </div>
+              )}
+              {resource.free && (
+                <div className="bg-gradient-to-r from-green-100 to-green-50 text-green-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-semibold border border-green-200 shadow-sm">
+                  Free
+                </div>
+              )}
             </div>
             
-            <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              <button
-                onClick={handleBookmarkToggle}
-                className={`p-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 ${
-                  isBookmarked 
-                    ? 'bg-blue-100 text-blue-600 shadow-md border border-blue-200' 
-                    : 'hover:bg-gray-100 text-gray-400 hover:text-gray-600 border border-gray-200'
-                }`}
-              >
-                <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-current' : ''}`} />
-              </button>
-            </div>
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors leading-tight">
+              {resource.name}
+            </h3>
           </div>
           
-          <p className="text-gray-600 text-base mb-5 line-clamp-3 leading-relaxed flex-grow">
-            {resource.description}
-          </p>
-          
-          <div className="flex flex-wrap gap-2 mb-6">
-            {resource.tags.slice(0, 2).map((tag) => (
-              <span
-                key={tag}
-                className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-medium hover:from-gray-100 hover:to-gray-200 transition-all duration-200 border border-gray-200 shadow-sm"
-              >
-                {tag}
-              </span>
-            ))}
-            {resource.tags.length > 2 && (
-              <span className="text-gray-500 text-sm font-medium self-center">+{resource.tags.length - 2}</span>
-            )}
+          <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <button
+              onClick={handleBookmarkToggle}
+              className={`p-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 ${
+                isBookmarked 
+                  ? 'bg-blue-100 text-blue-600 shadow-md border border-blue-200' 
+                  : 'hover:bg-gray-100 text-gray-400 hover:text-gray-600 border border-gray-200'
+              }`}
+            >
+              <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-current' : ''}`} />
+            </button>
           </div>
-          
-          <a
-            href={resource.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 w-full justify-center text-white px-6 py-4 rounded-xl transition-all duration-300 font-semibold transform hover:scale-105 shadow-lg hover:shadow-xl mt-auto"
-            style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}
-          >
-            Visit Resource
-            <ExternalLink className="w-4 h-4" />
-          </a>
         </div>
+        
+        <p className="text-gray-600 text-base mb-5 line-clamp-3 leading-relaxed flex-grow">
+          {resource.description}
+        </p>
+        
+        <div className="flex flex-wrap gap-2 mb-6">
+          {resource.tags.slice(0, 2).map((tag) => (
+            <span
+              key={tag}
+              className="bg-gradient-to-r from-gray-50 to-gray-100 text-gray-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-sm font-medium hover:from-gray-100 hover:to-gray-200 transition-all duration-200 border border-gray-200 shadow-sm"
+            >
+              {tag}
+            </span>
+          ))}
+          {resource.tags.length > 2 && (
+            <span className="text-gray-500 text-sm font-medium self-center">+{resource.tags.length - 2}</span>
+          )}
+        </div>
+        
+        <a
+          href={resource.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 w-full justify-center text-white px-6 py-4 rounded-xl transition-all duration-300 font-semibold transform hover:scale-105 shadow-lg hover:shadow-xl mt-auto"
+          style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}
+        >
+          Visit Resource
+          <ExternalLink className="w-4 h-4" />
+        </a>
       </div>
+    </div>
   );
 }

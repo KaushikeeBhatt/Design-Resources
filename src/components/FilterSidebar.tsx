@@ -38,29 +38,29 @@ export function FilterSidebar({
       
       {/* Sidebar */}
       <div className={`
-        fixed lg:sticky top-0 left-0 h-screen lg:h-[calc(100vh-2rem)] w-80 lg:w-64 bg-white border-r border-gray-200 z-50 lg:z-auto
+        fixed lg:sticky top-0 left-0 h-screen lg:h-[calc(100vh-2rem)] w-72 sm:w-80 lg:w-64 bg-white border-r border-gray-200 z-50 lg:z-auto
         transform transition-transform duration-300 ease-in-out lg:transform-none
         ${isVisible ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         flex flex-col
       `}>
         {/* Fixed Header */}
-        <div className="p-6 pb-4 border-b border-gray-100 flex-shrink-0">
+        <div className="p-4 sm:p-6 pb-4 border-b border-gray-100 flex-shrink-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Filter className="w-5 h-5 text-gray-600" />
-              <h3 className="font-semibold text-gray-900">Categories</h3>
+              <Filter className="w-4 sm:w-5 h-4 sm:h-5 text-gray-600" />
+              <h2 className="text-lg sm:text-xl font-bold text-gray-900">Filters</h2>
             </div>
             <button
               onClick={onClose}
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="lg:hidden p-1.5 sm:p-2 hover:bg-gray-100 rounded-lg transition-colors"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 sm:w-5 h-4 sm:h-5 text-gray-500" />
             </button>
           </div>
         </div>
         
         {/* Scrollable Categories */}
-        <div className="flex-1 overflow-y-auto p-6 pt-4">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 pt-4">
           <div className="space-y-2">
             <button
               onClick={() => {

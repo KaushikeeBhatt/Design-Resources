@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Search, Star, Filter, Grid, Palette, Code, Zap, Sparkles, ArrowRight, Layers } from 'lucide-react';
+import { Search, Star, Filter, Grid, Palette, Code, Zap, Sparkles, ArrowRight, Layers, ChevronDown } from 'lucide-react';
 import { Header } from './components/Header';
 import { CategoryCard } from './components/CategoryCard';
 import { MemoizedResourceCard } from './components/MemoizedResourceCard';
@@ -13,11 +13,13 @@ import { useInfiniteScroll } from './hooks/useInfiniteScroll';
 import { categories } from './data/categories';
 import { resources } from './data/resources';
 import TypingText  from './TypingText';
+
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
+  const [showMobileCategoryDropdown, setShowMobileCategoryDropdown] = useState(false);
 
   // Memoized search handler to prevent unnecessary re-renders
   const handleSearchChange = useCallback((query: string) => {
@@ -79,12 +81,78 @@ function App() {
 
   const featuredCategories = categoriesWithDynamicCounts.slice(0, 8);
 
+  const handleMobileDropdownClose = useCallback(() => {
+    setShowMobileCategoryDropdown(false);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Background />
       <FloatingShapes />
-      <Header />
+      <Header searchQuery={searchQuery} onSearchChange={handleSearchChange} />
       
+      {/* Floating Mobile Category Switcher */}
+      <div className="md:hidden fixed bottom-4 left-4 right-4 z-40">
+        <div className="relative">
+          <button
+            onClick={() => setShowMobileCategoryDropdown(!showMobileCategoryDropdown)}
+            className="w-full flex items-center justify-between px-4 py-3 bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl shadow-lg text-gray-900 font-medium"
+          >
+            <div className="flex items-center gap-2">
+              <Filter className="w-4 h-4 text-blue-600" />
+              <span className="text-sm">
+                {selectedCategory === 'all' ? 'All Resources' : 
+                 categoriesWithDynamicCounts.find(c => c.id === selectedCategory)?.name || 'Category'}
+              </span>
+              <span className="text-xs text-gray-500">
+                ({filteredResources.length})
+              </span>
+            </div>
+            <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform ${showMobileCategoryDropdown ? 'rotate-180' : ''}`} />
+          </button>
+          
+          {showMobileCategoryDropdown && (
+            <>
+              {/* Backdrop */}
+              <div 
+                className="fixed inset-0 bg-black/20 z-30"
+                onClick={() => setShowMobileCategoryDropdown(false)}
+              />
+              
+              {/* Dropdown */}
+              <div className="absolute bottom-full left-0 right-0 mb-2 bg-white border border-gray-200 rounded-xl shadow-xl max-h-64 overflow-y-auto z-50">
+                {categoriesWithDynamicCounts.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => {
+                      setSelectedCategory(category.id);
+                      setShowMobileCategoryDropdown(false);
+                      const resourcesSection = document.getElementById('resources-section');
+                      if (resourcesSection) {
+                        resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
+                    className={`w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors ${
+                      selectedCategory === category.id ? 'bg-blue-50 text-blue-600' : 'text-gray-900'
+                    } ${category.id === categoriesWithDynamicCounts[0].id ? 'rounded-t-xl' : ''} ${
+                      category.id === categoriesWithDynamicCounts[categoriesWithDynamicCounts.length - 1].id ? 'rounded-b-xl' : ''
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className={`w-2 h-2 rounded-full ${selectedCategory === category.id ? 'bg-blue-600' : 'bg-gray-300'}`} />
+                      <span className="font-medium">{category.name}</span>
+                    </div>
+                    <span className="text-sm text-gray-500">
+                      {category.count}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
@@ -94,72 +162,31 @@ function App() {
               <Sparkles className="w-4 h-4 text-yellow-400 mr-2" />
               <span className="text-sm font-medium text-black/90">New: 500+ Premium Resources Added</span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Design
             </span>
             <br />
-            <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Without
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Limits
-            </span>
+            <TypingText 
+              texts={[
+                "Unleash your creativity.",
+                "Build without limits.",
+                "Design for the future."
+              ]} 
+              speed={60} 
+              eraseSpeed={40} 
+              delay={2000} 
+            />
           </h1>
-          <p className="text-xl md:text-2xl text-black/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-          <TypingText 
-            texts={[
-              "Unleash your creativity.",
-              "Build without limits.",
-              "Design for the future."
-            ]} 
-            speed={60} 
-            eraseSpeed={40} 
-            delay={2000} 
-          />
-
+          <p className="text-lg sm:text-xl md:text-2xl text-black/80 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
+            Discover 555+ premium design resources, tools, and inspiration.
+            <br className="hidden sm:block" />
+            Find exactly what you need from our curated collection of design resources
           </p>
 
           </div>
 
-          <div className="mb-12">
-            <div className="max-w-2xl mx-auto relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-2xl blur opacity-30 animate-pulse"></div>
-              <div className="relative flex items-center bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-2">
-                <Search className="w-6 h-6 text-white/60 ml-4" />
-                <input
-                  type="text"
-                  placeholder="Search for UI kits, icons, fonts, templates..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                      const resourcesSection = document.getElementById('resources-section');
-                      if (resourcesSection) {
-                        resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                      }
-                    }
-                  }}
-                  className="flex-1 bg-transparent text-white placeholder-white/60 px-4 py-4 outline-none text-lg"
-                />
-                <button 
-                  onClick={() => {
-                    const resourcesSection = document.getElementById('resources-section');
-                    if (resourcesSection) {
-                      resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                  className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl text-white font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 flex items-center"
-                >
-                  Search
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Palette className="w-6 h-6 text-black" />
@@ -168,7 +195,7 @@ function App() {
               <p className="text-black/70">Premium design assets updated daily</p>
             </div>
 
-            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2">
+            <div className="group bg-white/38 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Layers className="w-6 h-6 text-black" />
               </div>
@@ -176,7 +203,7 @@ function App() {
               <p className="text-black/70">UI kits, icons, fonts, templates & more</p>
             </div>
 
-            <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2">
+            <div className="group bg-white/86 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Sparkles className="w-6 h-6 text-white" />
               </div>
@@ -230,13 +257,16 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8">
             <div className="flex flex-col lg:flex-row gap-8">
-              <FilterSidebar
-                categories={categoriesWithDynamicCounts}
-                selectedCategory={selectedCategory}
-                onCategoryChange={handleCategoryChange}
-                isVisible={showFilters}
-                onClose={() => setShowFilters(false)}
-              />
+              {/* Hide FilterSidebar on mobile - only show on lg+ screens */}
+              <div className="hidden lg:block">
+                <FilterSidebar
+                  categories={categoriesWithDynamicCounts}
+                  selectedCategory={selectedCategory}
+                  onCategoryChange={handleCategoryChange}
+                  isVisible={showFilters}
+                  onClose={() => setShowFilters(false)}
+                />
+              </div>
               
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
@@ -251,14 +281,7 @@ function App() {
                   </div>
                   
                   <div className="flex items-center gap-4">
-                    <button
-                      onClick={() => setShowFilters(!showFilters)}
-                      className="lg:hidden inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 text-black hover:bg-white/20 transition-colors"
-                    >
-                      <Filter className="w-4 h-4" />
-                      Filters
-                    </button>
-                    
+                    {/* Remove mobile filters button since FilterSidebar is hidden on mobile */}
                     <ViewToggle viewMode={viewMode} onViewModeChange={setViewMode} />
                   </div>
                 </div>
@@ -352,10 +375,62 @@ function App() {
         <div className="md:text-right padding-10">
           <h4 className="text-black font-semibold mb-4">Resources</h4>
           <ul className="space-y-2 text-black/70">
-            <li><a href="#" className="hover:text-black">Design Tools</a></li>
-            <li><a href="#" className="hover:text-black">UI Kits</a></li>
-            <li><a href="#" className="hover:text-black">Icons</a></li>
-            <li><a href="#" className="hover:text-black">Fonts</a></li>
+            <li>
+              <button 
+                onClick={() => {
+                  handleCategoryChange('ui-kits');
+                  const resourcesSection = document.getElementById('resources-section');
+                  if (resourcesSection) {
+                    resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="hover:text-black transition-colors cursor-pointer text-left"
+              >
+                UI Kits
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => {
+                  handleCategoryChange('icons');
+                  const resourcesSection = document.getElementById('resources-section');
+                  if (resourcesSection) {
+                    resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="hover:text-black transition-colors cursor-pointer text-left"
+              >
+                Icons
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => {
+                  handleCategoryChange('fonts');
+                  const resourcesSection = document.getElementById('resources-section');
+                  if (resourcesSection) {
+                    resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="hover:text-black transition-colors cursor-pointer text-left"
+              >
+                Fonts
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => {
+                  handleCategoryChange('design-tools');
+                  const resourcesSection = document.getElementById('resources-section');
+                  if (resourcesSection) {
+                    resourcesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                className="hover:text-black transition-colors cursor-pointer text-left"
+              >
+                Design Tools
+              </button>
+            </li>
           </ul>
         </div>
       </div>
