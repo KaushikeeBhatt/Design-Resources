@@ -1,8 +1,9 @@
 # 🎨 DesignHub - Premium Design Resources Collection
 
 <div align="center">
+  
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-FF5733?style=for-the-badge&logo=netlify&logoColor=white)](https://design-resource.netlify.app/)
 
-![DesignHub Banner](https://via.placeholder.com/1200x400/667eea/ffffff?text=DesignHub%20-%20Design%20Without%20Limits)
 
 [![React](https://img.shields.io/badge/React-18.0+-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
