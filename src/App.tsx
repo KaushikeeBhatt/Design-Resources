@@ -162,10 +162,11 @@ function App() {
               <Sparkles className="w-4 h-4 text-yellow-400 mr-2" />
               <span className="text-sm font-medium text-black/90">New: 500+ Premium Resources Added</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-blue-700 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Design
+            <h1 className="text-4xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-purple-700 via-pink-500 to-yellow-500 bg-clip-text text-transparent">
+              Design Without Limits
             </span>
+
             <br />
             <TypingText 
               texts={[
