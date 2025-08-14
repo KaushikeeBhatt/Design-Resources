@@ -24,7 +24,7 @@
 ### 🎯 **Core Features**
 | Feature | Description |
 |---------|-------------|
-| 🎨 **555+ Curated Resources** | Massive collection of hand-picked design tools, UI components, fonts, and inspiration |
+| 🎨 **800+ Curated Resources** | Massive collection of hand-picked design tools, UI components, fonts, and inspiration |
 | 🔍 **Smart Search & Filter** | Find exactly what you need with intelligent filtering across all categories |
 | 📱 **Responsive Design** | Perfect experience on desktop, tablet, and mobile devices |
 | 🔖 **Real-time Bookmarks** | Save favorites with instant synchronization across the app |
@@ -110,7 +110,7 @@ designhub/
 
 <div align="center">
 
-### 🌟 **555+ Resources Across 15+ Categories**
+### 🌟 **800+ Resources Across 15+ Categories**
 
 | 🎨 **UI Graphics** | 🔤 **Fonts** | 🎨 **Colors** | 🛠️ **Tools** | 📷 **Photos** |
 |:---:|:---:|:---:|:---:|:---:|
