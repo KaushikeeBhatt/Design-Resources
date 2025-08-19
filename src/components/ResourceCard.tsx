@@ -1,7 +1,5 @@
 import { ExternalLink, Star, Bookmark } from 'lucide-react';
-import { useLocalStorage } from '../hooks/useLocalStorage';
-import { toggleBookmarkWithNotification, isResourceBookmarked, addBookmarkChangeListener } from '../utils/bookmarkManager';
-import { useState, useEffect } from 'react';
+import { useBookmarks } from '../hooks/useBookmarks';
 
 interface Resource {
   id: string;
@@ -63,20 +61,7 @@ const BackgroundSVG = () => (
 );
 
 export function ResourceCard({ resource, viewMode }: ResourceCardProps) {
-  // Use bookmark manager for real-time updates
-  const [isBookmarked, setIsBookmarked] = useState(() => isResourceBookmarked(resource.id));
-
-  // Listen for bookmark changes to update local state
-  useEffect(() => {
-    const unsubscribe = addBookmarkChangeListener(() => {
-      setIsBookmarked(isResourceBookmarked(resource.id));
-    });
-    return unsubscribe;
-  }, [resource.id]);
-
-  const handleBookmarkToggle = () => {
-    toggleBookmarkWithNotification(resource.id);
-  };
+  const { isBookmarked, toggleBookmark, isLoading } = useBookmarks(resource.id);
 
   if (viewMode === 'list') {
     
@@ -125,11 +110,14 @@ export function ResourceCard({ resource, viewMode }: ResourceCardProps) {
           
           <div className="flex items-center gap-3 flex-shrink-0">
             <button
-              onClick={handleBookmarkToggle}
+              onClick={toggleBookmark}
+              disabled={isLoading} // Disable button when loading
               className={`p-3 rounded-xl transition-all duration-200 transform hover:scale-105 ${
                 isBookmarked 
                   ? 'bg-blue-100 text-blue-600 shadow-md border border-blue-200' 
                   : 'hover:bg-gray-100 text-gray-400 hover:text-gray-600 border border-gray-200 shadow-sm'
+              } ${
+                isLoading ? 'cursor-not-allowed opacity-50' : ''
               }`}
             >
               <Bookmark className={`w-5 h-5 ${isBookmarked ? 'fill-current' : ''}`} />
@@ -180,11 +168,14 @@ export function ResourceCard({ resource, viewMode }: ResourceCardProps) {
           
           <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             <button
-              onClick={handleBookmarkToggle}
+              onClick={toggleBookmark}
+              disabled={isLoading} // Disable button when loading
               className={`p-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 ${
                 isBookmarked 
                   ? 'bg-blue-100 text-blue-600 shadow-md border border-blue-200' 
                   : 'hover:bg-gray-100 text-gray-400 hover:text-gray-600 border border-gray-200'
+              } ${
+                isLoading ? 'cursor-not-allowed opacity-50' : ''
               }`}
             >
               <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-current' : ''}`} />

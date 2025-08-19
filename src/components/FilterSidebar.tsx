@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Filter } from 'lucide-react';
+import { X, Filter, Tag } from 'lucide-react';
 import { DivideIcon as LucideIcon } from 'lucide-react';
 
 interface Category {
@@ -24,7 +24,7 @@ export function FilterSidebar({
   selectedCategory, 
   onCategoryChange, 
   isVisible, 
-  onClose 
+  onClose, 
 }: FilterSidebarProps) {
   return (
     <>
@@ -38,7 +38,8 @@ export function FilterSidebar({
       
       {/* Sidebar */}
       <div className={`
-        fixed lg:sticky top-0 left-0 h-screen lg:h-[calc(100vh-2rem)] w-72 sm:w-80 lg:w-64 bg-white border-r border-gray-200 z-50 lg:z-auto
+        fixed top-0 left-0 h-screen w-72 sm:w-80 bg-white border-r border-gray-200 z-50
+        lg:static lg:h-auto lg:w-full lg:max-h-[calc(100vh-6rem)]
         transform transition-transform duration-300 ease-in-out lg:transform-none
         ${isVisible ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         flex flex-col
@@ -61,6 +62,7 @@ export function FilterSidebar({
         
         {/* Scrollable Categories */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-6 pt-4">
+          <h3 className="text-sm font-semibold text-gray-500 mb-3 px-4">Categories</h3>
           <div className="space-y-2">
             <button
               onClick={() => {

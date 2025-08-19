@@ -10,12 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.44.4",
+    "esbuild": "^0.21.5",
+    "framer-motion": "^10.16.4",
+    "fuse.js": "^7.1.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-image-crop": "^10.1.8",
+    "react-intersection-observer": "^9.5.2",
+    "sonner": "^1.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@types/node": "^20.8.10",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
