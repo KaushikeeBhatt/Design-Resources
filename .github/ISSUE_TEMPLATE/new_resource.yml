@@ -1,0 +1,138 @@
+name: 🎨 New Resource Submission
+description: Submit a new design or development resource to be added to the collection
+title: "[RESOURCE] "
+labels: ["resource-submission", "needs-review"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the Design Resources Hub! 🎨
+        
+        Please fill out this form to suggest a new resource. We'll review your submission and add it to the collection if it meets our quality standards.
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource Name
+      description: What is the name of the resource?
+      placeholder: e.g., Figma, Heroicons, Unsplash
+    validations:
+      required: true
+
+  - type: input
+    id: resource-url
+    attributes:
+      label: Resource URL
+      description: Direct link to the resource
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: resource-description
+    attributes:
+      label: Description
+      description: Brief description of what this resource offers (keep it concise)
+      placeholder: A brief description of what this resource provides and why it's useful for designers/developers
+    validations:
+      required: true
+
+  - type: dropdown
+    id: resource-category
+    attributes:
+      label: Category
+      description: Which category best fits this resource?
+      options:
+        - ui-graphics (Modern UI components and design elements)
+        - colors (Color palettes and design tools)
+        - icons (Icon sets and vector graphics)
+        - logos (Logo resources and brand assets)
+        - vectors (Vector graphics and illustrations)
+        - mockups (Device and product mockups)
+        - templates (HTML & CSS Templates)
+        - design-tools (Web-based design applications)
+        - design-software (Downloadable design applications)
+        - design-inspiration (Galleries and showcase websites)
+        - image-tools (Image editing and optimization tools)
+        - fonts (Typography resources and font libraries)
+        - icon-fonts (Icon font libraries and sets)
+        - stock-photos (Free and premium photography)
+        - stock-videos (Video footage and motion graphics)
+        - stock-music-sound-effects (Audio resources and sound effects)
+        - css-frameworks (UI frameworks and component libraries)
+        - animations (Animation libraries and effects)
+        - css-animations (CSS animation libraries and effects)
+        - js-animations (JavaScript animation libraries)
+        - ui-components (Reusable interface components)
+        - charts (Chart libraries and data visualization tools)
+        - react-ui (React component libraries)
+        - vue-ui-libraries (Vue.js component libraries)
+        - angular-ui-libraries (Angular component libraries)
+        - svelte-ui-libraries (Svelte component libraries)
+        - react-native-ui-libraries (React Native component libraries)
+        - chrome-extensions (Chrome browser extensions for developers)
+        - firefox-extensions (Firefox browser extensions for developers)
+        - ai-tools (AI-powered design generators)
+        - favicons (Favicon generators and resources)
+        - others (Miscellaneous design resources)
+    validations:
+      required: true
+
+  - type: input
+    id: resource-tags
+    attributes:
+      label: Tags
+      description: Add 2-4 relevant tags separated by commas
+      placeholder: e.g., UI Design, Collaboration, Prototyping, Interface
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: resource-type
+    attributes:
+      label: Resource Type
+      options:
+        - label: This resource is free to use
+          required: false
+        - label: This is a premium/exceptional resource (should be featured)
+          required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional context about why this resource is valuable?
+      placeholder: Optional - provide any additional context about the resource
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: submission-checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following before submitting
+      options:
+        - label: I have verified that this resource is not already in the collection
+          required: true
+        - label: The URL is working and leads directly to the resource
+          required: true
+        - label: This is a high-quality resource that would be valuable to designers/developers
+          required: true
+        - label: I have provided accurate information about whether the resource is free or paid
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        **What happens next?**
+        
+        1. Our team will review your submission
+        2. We'll check the resource for quality and appropriateness
+        3. If approved, we'll add it to the collection and update the counts
+        4. You'll be notified when the resource is added
+        
+        Thank you for helping make the Design Resources Hub better! 🚀
