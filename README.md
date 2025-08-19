@@ -29,7 +29,7 @@
 | 📱 **Responsive Design** | Perfect experience on desktop, tablet, and mobile devices |
 | 🔖 **Real-time Bookmarks** | Save favorites with instant synchronization across the app |
 | 🌊 **Glassmorphism UI** | Modern frosted glass effects and smooth animations |
-| ⚡ **Infinite Scroll** | Smooth performance with optimized loading of 555+ resources |
+| ⚡ **Infinite Scroll** | Smooth performance with optimized loading of 850+ resources |
 | 🎭 **Dynamic Categories** | Auto-updating resource counts across 15+ categories |
 | 🎪 **Animated Backgrounds** | Beautiful SVG wave animations on every card |
 
@@ -59,7 +59,7 @@ npm install
 npm run dev
 ```
 
-### 🎉 That's it! Open `http://localhost:5173` and start exploring 555+ design resources!
+### 🎉 That's it! Open `http://localhost:5173` and start exploring 850+ design resources!
 
 ---
 
@@ -77,7 +77,7 @@ designhub/
 │   │   └── 🔖 BookmarkPanel.tsx# Bookmark management
 │   ├── 📁 data/               # Static data
 │   │   ├── 📊 categories.ts   # Resource categories
-│   │   └── 🗂️ resources.ts    # All 555+ design resources
+│   │   └── 🗂️ resources.ts    # All 850+ design resources
 │   ├── 📁 hooks/              # Custom React hooks
 │   │   ├── 🔄 useInfiniteScroll.ts
 │   │   └── 💾 useLocalStorage.ts
@@ -140,14 +140,14 @@ designhub/
 ## 🔧 Technical Highlights
 
 ### ⚡ Performance Optimizations
-- **Infinite Scroll**: Loads 12 resources initially from 555+ collection, more on demand
+- **Infinite Scroll**: Loads 12 resources initially from 850+ collection, more on demand
 - **Memoized Filtering**: Prevents unnecessary re-renders across large dataset
 - **Lazy Loading**: Components load as needed for optimal performance
-- **Optimized Search**: Fast filtering across 555+ resources
+- **Optimized Search**: Fast filtering across 850+ resources
 
 ### 🎯 Advanced Features
 - **Real-time Bookmarks**: Event-driven bookmark synchronization
-- **Dynamic Counts**: Category counts update automatically across all 555+ resources
+- **Dynamic Counts**: Category counts update automatically across all 850+ resources
 - **Local Storage**: Persistent user preferences and bookmarks
 - **Responsive Grid**: Adapts to all screen sizes with smooth performance
 
@@ -155,7 +155,7 @@ designhub/
 - **TypeScript**: Full type safety and IntelliSense across entire codebase
 - **ESLint**: Consistent code formatting
 - **Component Architecture**: Reusable, maintainable components
-- **Custom Hooks**: Clean separation of concerns for managing 555+ resources
+- **Custom Hooks**: Clean separation of concerns for managing 850+ resources
 
 ---
 
@@ -167,7 +167,7 @@ We love contributions! Here's how you can help make DesignHub even better:
 1. **🐛 Bug Reports**: Found an issue? Let us know!
 2. **💡 Feature Requests**: Have an idea? We'd love to hear it!
 3. **📝 Documentation**: Help improve our docs
-4. **🎨 New Resources**: Suggest amazing design resources to add to our 555+ collection
+4. **🎨 New Resources**: Suggest amazing design resources to add to our 850+ collection
 5. **💻 Code**: Submit pull requests for improvements
 
 ### 📋 Development Process
@@ -203,7 +203,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
  **Open Source Contributors** - Making the web beautiful<br>
  **React Team** - For the incredible framework<br>
  **Tailwind CSS** - For the utility-first approach<br>
- **All 555+ Resource Creators** - For sharing their amazing work with the world<br>
+ **All 850+ Resource Creators** - For sharing their amazing work with the world<br>
 
 ### 🌟 Built With Love By
 **[Kaushikee Bhatt](https://github.com/yourusername)**
@@ -213,13 +213,13 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 <div align="center">
 
 ### 🚀 **Ready to Design Without Limits?**
-### **Explore 555+ Premium Design Resources!**
+### **Explore 850+ Premium Design Resources!**
 
 [![Get Started](https://img.shields.io/badge/Get_Started-667eea?style=for-the-badge&logo=rocket&logoColor=white)](#quick-start)
 [![Star on GitHub](https://img.shields.io/badge/Star_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/designhub)
 [![Follow Updates](https://img.shields.io/badge/Follow_Updates-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
 
-**Made with ❤️ for designers worldwide • 555+ Resources and Growing!**
+**Made with ❤️ for designers worldwide • 850+ Resources and Growing!**
 
 </div>
 
